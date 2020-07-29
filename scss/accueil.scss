@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: nunito, sans-serif;
+  
+}
+@import '_menu.scss';
+@import '_footer.scss';
+.sectionTeam{
+    margin-top: 10px;
+    .sectionTeam-photo {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(rgba(0,0,0,0.5));
+    }
+    .title{
+        position: absolute;
+        top:70%;
+        color:#ffff;
+        left: 50%;
+        font-size:50px;
+        font-weight: bold;
+        transform: translate(-50%,-50%);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+
+
+    }
+}
+.service {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: 10%;
+    h1 {
+        text-align: center;
+        margin-right: 13%;
+    }
+    .container {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        .block {
+            height: 400px;
+            width: 300px;
+            padding-top: 50px;
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p {
+                padding-top: 20px;
+            }
+        }
+    }
+}
