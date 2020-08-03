@@ -242,6 +242,7 @@ ul li .active {
   padding: 5px 15px;
   width: 64px;
   height: auto;
+  cursor: pointer;
 }
 
 .footer h2 {

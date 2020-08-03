@@ -242,6 +242,7 @@ ul li .active {
   padding: 5px 15px;
   width: 64px;
   height: auto;
+  cursor: pointer;
 }
 
 .footer h2 {
@@ -283,7 +284,7 @@ ul li .active {
   display: block;
   width: 400px;
   height: 500px;
-  background-color: #dfd0d0;
+  background-color: #f2f2f2;
   margin-top: 150px;
   color: white;
   padding: 5px 10px;
@@ -305,6 +306,7 @@ ul li .active {
   font-size: 25px;
   margin: 0;
   padding: 0 0 20px;
+  color: black;
 }
 
 .login form p {
@@ -336,6 +338,14 @@ ul li .active {
   background: #b4b8b1;
   color: #ffff;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.login form input[type="submit"]:hover {
+  background: #a5c922;
+  color: #131111;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .login form a {
