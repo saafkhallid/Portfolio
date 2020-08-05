@@ -16,8 +16,6 @@ body {
 
 @import '_menu.scss';
 @import '_footer.scss';
-
-
 .sectionTeam{
     margin-top: 10px;
     .sectionTeam-photo {
@@ -40,37 +38,4 @@ body {
 
 
     }
-}
-
-.portfolio-team {
-    .portfolio-team--titre{
-        margin-top: 49px;
-        font-size: 40px;
-        color: rgb(207, 192, 192);
-        text-align: center;
-        height: 100px;
-    }
-
-    .portfolio{
-        padding-bottom: 10px;
-        align-self: center;;
-        padding-top: 60px;
-        width: 60%;
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin: 0 auto;
-        grid-column-gap :20px;
-        grid-row-gap:20px;
-        .block {
-            border: 1px solid rgb(206, 197, 197);
-        }
-        img {
-            width:300px;
-            height: 300px;
-            display: block;
-            cursor: pointer;
-        }
-    }
-    
 }
