@@ -19,4 +19,6 @@ const navSlide = () => {
     });
 
 }
-
+// var x=20;
+// console.log(x);
+// alert("bienvenu portfolio khalid saaf")
