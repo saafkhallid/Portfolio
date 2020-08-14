@@ -10,18 +10,18 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html"  target="_self" ><h1>Saaf</h1> </a>
+            <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
         </div>
         </div>
         <ul class="navMenu">
-            <li><a class="active" href="index.html">Acceuil</a></li>
-            <li><a href="Apropo.html">À propos </a></li>
-            <li class="active" id="act"><a href="portfolio.html">portfolio</a>
+            <li><a class="active" href="index.php">Acceuil</a></li>
+            <li><a href="Apropo.php">À propos </a></li>
+            <li class="active" id="act"><a href="portfolio.php">portfolio</a>
                 
             </li>
 
-            <li class="active"><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="login.html">login</a></li>
+            <li class="active"><a href="contact.php">Contact</a></li>
+            <li class="active"><a href="login.php">login</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
@@ -33,14 +33,14 @@
 
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo" src="/Assets/flat-lay-of-black-frame-tablet-3774094(1).jpg">
+        <img class="  sectionTeam-photo" src="/PORTFOLIO/Assets/flat-lay-of-black-frame-tablet-3774094(1).jpg">
         <div><h1 class="title">  I'm web developer<br>
             Khalid saaf   </h1></div>
     </section> 
     <section class="about">
         <div class=" about-block "><h1 class="  about-block__titre  ">About Me</h1></div>
         <div class="aboutmy">
-            <div class="information1"><img src="/Assets/adult-beard-boy-casual-220453.jpg" width="300px" alt="">
+            <div class="information1"><img src="/PORTFOLIO/Assets/adult-beard-boy-casual-220453.jpg" width="300px" alt="">
             
             </div>
            
@@ -100,10 +100,10 @@
         <div class="footer">
             <h1>Saaf</h1>
             <div class="logo">
-                <img src="/Assets/twitter.png" alt="">
-                <img src="/Assets/facebook-2.png" alt="">
-                <img src="/Assets/youtube.png" alt="">
-                <img src="/Assets/linkedin.png" alt="">
+                <img src="/PORTFOLIO/Assets/twitter.png" alt="">
+                <img src="/PORTFOLIO/Assets/facebook-2.png" alt="">
+                <img src="/PORTFOLIO/Assets/youtube.png" alt="">
+                <img src="/PORTFOLIO/Assets/linkedin.png" alt="">
             </div>
             <h2>@ 2020 copyright all right reserved</h2>
         </div>

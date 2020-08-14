@@ -238,9 +238,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
         </div>
         <ul class="navMenu">
-            <li><a  href="index.html">Acceuil</a></li>
-            <li><a href="Apropo.html">À propos </a></li>
-            <li class="active" id="act"><a href="Apropo.html">portfolio</a>
+            <li><a  href="index.php">Acceuil</a></li>
+            <li><a href="Apropo.php">À propos </a></li>
+            <li class="active" id="act"><a href="Apropo.php">portfolio</a>
                 
             </li>
 

@@ -13,7 +13,7 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html"  target="_self" ><h1>Saaf</h1> </a>
+            <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
         </div>
         </div>
         <ul class="navMenu">
@@ -38,7 +38,7 @@
 
     <section class="sectionlogin">
         
-        <img class="  sectionlogin-photo" src="/Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
+        <img class="  sectionlogin-photo" src="/PORTFOLIO/Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
        
     
     
@@ -78,10 +78,10 @@
         <div class="footer">
             <h1>Saaf</h1>
             <div class="logo">
-               <a href="https://twitter.com/login?lang=fr" target="_blank"> <img src="/Assets/twitter.png" alt=""> </a>
-               <a href="https://fr-fr.facebook.com/ " target="_blank">  <img src="/Assets/facebook-2.png" alt=""> </a>
-                <a href=" https://www.youtube.com/" target="_blank"> <img src="/Assets/youtube.png" alt=""> </a>
-                <a href="https://www.linkedin.com/feed/" target="_blank"> <img src="/Assets/linkedin.png" alt=""> </a>
+               <a href="https://twitter.com/login?lang=fr" target="_blank"> <img src="/PORTFOLIO/Assets/twitter.png" alt=""> </a>
+               <a href="https://fr-fr.facebook.com/ " target="_blank">  <img src="/PORTFOLIO/Assets/facebook-2.png" alt=""> </a>
+                <a href=" https://www.youtube.com/" target="_blank"> <img src="/PORTFOLIO/Assets/youtube.png" alt=""> </a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"> <img src="/PORTFOLIO/Assets/linkedin.png" alt=""> </a>
             </div>
             <h2>@ 2020 copyright all right reserved</h2>
         </div>

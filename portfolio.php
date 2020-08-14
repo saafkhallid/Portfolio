@@ -10,12 +10,12 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html"  target="_self" ><h1>Saaf</h1> </a>
+            <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
         </div>
         </div>
         <ul class="navMenu">
             <li><a class="active" href="index.php">Acceuil</a></li>
-            <li><a href="Apropo.html">À propos </a></li>
+            <li><a href="Apropo.php">À propos </a></li>
             <li class="active" id="act"><a href="portfolio.php">portfolio</a>
                 
             </li>
@@ -32,7 +32,7 @@
 
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo" src="/Assets/coffee-2737047_1920.png">
+        <img class="  sectionTeam-photo" src="/PORTFOLIO/Assets/coffee-2737047_1920.png">
         <div><h1 class="title">  I'm web developer<br>
             Khalid saaf   </h1></div>
     </section>

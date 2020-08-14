@@ -11,13 +11,13 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html"  target="_self" ><h1>Saaf</h1> </a>
+            <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
         </div>
         </div>
         <ul class="navMenu">
             <li><a class="active" href="index.php">Acceuil</a></li>
             <li><a href="Apropo.php">À propos </a></li>
-            <li class="active" id="act"><a href="#">portfolio</a>
+            <li class="active" id="act"><a href="portfolio.php">portfolio</a>
                 
             </li>
 
@@ -32,7 +32,7 @@
     </nav>
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo" src="/Assets/coffee-2737047_1920.png">
+        <img class="  sectionTeam-photo" src="/PORTFOLIO/Assets/coffee-2737047_1920.png">
         <div><h1 class="title">  I'm web developer<br>
             Khalid saaf   </h1></div>
 
@@ -43,32 +43,32 @@
         <h1>Our service</h1>
         <div class="container">
             <div class="block">
-                <img src="/Assets/www.png" alt="">
+                <img src="/PORTFOLIO/Assets/www.png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div>
             <div class="block">
-                <img src="/Assets/phone (1).png" alt="">
+                <img src="/PORTFOLIO/Assets/phone (1).png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
-                <img src="/Assets/rocket.png" alt="">
+                <img src="/PORTFOLIO/Assets/rocket.png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
-                <img src="/Assets/google-docs.png" alt="">
+                <img src="/PORTFOLIO/Assets/google-docs.png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
-                <img src="/Assets/repair (1).png" alt="">
+                <img src="/PORTFOLIO/Assets/repair (1).png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
-                <img src="/Assets/idea (1).png" alt="">
+                <img src="/PORTFOLIO/Assets/idea (1).png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
-                <img src="/Assets/email.png" alt="">
+                <img src="/PORTFOLIO/Assets/email.png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
-                <img src="/Assets/checklist.png" alt="">
+                <img src="/PORTFOLIO/Assets/checklist.png" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
-                <img src="/Assets/google-docs.png " alt="">
+                <img src="/PORTFOLIO/Assets/google-docs.png " alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div>
            
@@ -81,10 +81,10 @@
         <div class="footer">
             <h1>Saaf</h1>
             <div class="logo">
-                <img src="/Assets/twitter.png" alt="">
-                <img src="/Assets/facebook-2.png" alt="">
-                <img src="/Assets/youtube.png" alt="">
-                <img src="/Assets/linkedin.png" alt="">
+                <img src="/PORTFOLIO/Assets/twitter.png" alt="">
+                <img src="/PORTFOLIO/Assets/facebook-2.png" alt="">
+                <img src="/PORTFOLIO/Assets/youtube.png" alt="">
+                <img src="/PORTFOLIO/Assets/linkedin.png" alt="">
             </div>
             <h2>@ 2020 copyright all right reserved</h2>
         </div>
