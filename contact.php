@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +17,14 @@
         </div>
         </div>
         <ul class="navMenu">
-            <li><a  href="index.html">Acceuil</a></li>
-            <li><a href="Apropo.html">À propos </a></li>
-            <li class="active" id="act"><a href="portfolio.html">portfolio</a>
+            <li><a  href="index.php">Acceuil</a></li>
+            <li><a href="Apropo.php">À propos </a></li>
+            <li class="active" id="act"><a href="portfolio.php">portfolio</a>
                 
             </li>
 
-            <li class="active"><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="login.html">login</a></li>
+            <li class="active"><a href="contact.php">Contact</a></li>
+            <li class="active"><a href="login.php">login</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
@@ -46,7 +49,12 @@
 
         <div class="block0"> <h1 class="contat--titre">contact</h1></div>
         <div class="container">
-            <form action="action_page.php">
+
+       
+
+
+
+            <form method="POST" action="action.php">
           
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -54,21 +62,13 @@
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="Maroc">Maroc</option>
-                <option value="France">France</option>
-                <option value="Canada">Canada</option>
-                <option value="USA">USA</option>
-
-              </select>
               <label for="email">Email: </label>
                 <input type="email" id="lname" name="Email" placeholder="Enter your email:">
           
               <label for="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
           
-              <input type="submit" value="Submit">
+              <input type="submit"  name="add" value="Submit" >
           
             </form>
           </div> 
@@ -87,6 +87,9 @@
         </div>
     </section>
 
+  
+
+    <script src="js/script.js"></script>
 
 
 </body>

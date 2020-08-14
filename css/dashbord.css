@@ -1,0 +1,170 @@
+.asideBar {
+  position: relative;
+  width: 13%;
+  background: black;
+  color: white;
+  height: 100vh;
+  font-size: 1vw;
+}
+
+.dashMenu {
+  width: 100%;
+  height: auto;
+  padding-top: 4%;
+  margin: 0 auto;
+}
+
+.dashMenu__imgIco {
+  width: 60%;
+  height: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .dashMenu__imgIco {
+    width: 200%;
+  }
+}
+
+.dashMenu li {
+  list-style: none;
+  padding: 4% 4% 4% 16%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8%;
+}
+
+@media screen and (max-width: 960px) {
+  .dashMenu li {
+    margin-top: 10%;
+    margin-bottom: 25%;
+    margin-left: 26%;
+  }
+}
+
+.dashMenu li:active {
+  background: #6a6ae4;
+}
+
+.dashMenu__divico {
+  width: 20%;
+}
+
+.dashMenu__dashboard {
+  margin-bottom: 40%;
+}
+
+@media screen and (max-width: 960px) {
+  .dashMenu__list {
+    display: none;
+  }
+}
+
+#menu11 {
+  padding-top: 10%;
+}
+
+#menu1 {
+  padding-bottom: 20%;
+}
+
+.topBar {
+  position: absolute;
+  width: 87%;
+  height: 3vw;
+  border: 2px solid black;
+  top: 0;
+  left: 13%;
+}
+
+@media screen and (max-width: 960px) {
+  .topBar {
+    height: 4vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topBar {
+    height: 5vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .topBar {
+    height: 6vw;
+  }
+}
+
+.topBar__titleAdmin {
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  left: 37%;
+  font-size: 1.3vw;
+}
+
+@media screen and (max-width: 960px) {
+  .topBar__titleAdmin {
+    font-size: 1.9vw;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topBar__titleAdmin {
+    font-size: 2.4vw;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .topBar__titleAdmin {
+    font-size: 2.8vw;
+    left: 20%;
+  }
+}
+
+.homePage {
+  position: fixed;
+  width: 87%;
+  height: 100%;
+  top: 6%;
+  left: 13%;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+.homePage__homeTitle {
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  color: #6a6ae4;
+}
+
+.homePage__blocdiv {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.homePage__illustimg {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#adminPage,
+#mediaPage,
+#categoryPage,
+#postPage,
+#partnerPage,
+#teamPage,
+#destPage,
+#galPage,
+#eventPage,
+#homePage {
+  display: none;
+}
+
+/*# sourceMappingURL=dashbord.css.map */

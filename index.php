@@ -15,14 +15,14 @@
         </div>
         </div>
         <ul class="navMenu">
-            <li><a class="active" href="index.html">Acceuil</a></li>
-            <li><a href="Apropo.html">À propos </a></li>
+            <li><a class="active" href="index.php">Acceuil</a></li>
+            <li><a href="Apropo.php">À propos </a></li>
             <li class="active" id="act"><a href="#">portfolio</a>
                 
             </li>
 
-            <li class="active"><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="login.html">login</a></li>
+            <li class="active"><a href="contact.php">Contact</a></li>
+            <li class="active"><a href="login.php">login</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
@@ -89,6 +89,6 @@
             <h2>@ 2020 copyright all right reserved</h2>
         </div>
     </section>
-    <script src="js/script.js"></script>
+    <script src=""></script>
 </body>
 </html>

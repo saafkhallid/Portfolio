@@ -1,0 +1,155 @@
+.asideBar {
+    position: relative;
+    width: 13%;
+    background: black;
+    color: white;
+    height: 100vh;
+    font-size: 1vw;
+}
+
+.dashMenu {
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+    margin: 0 auto;
+
+    &__imgIco {
+        width: 60%;
+        height: auto;
+
+        @media screen and (max-width:960px) {
+            width: 200%;
+        }
+    }
+
+
+    & li {
+        list-style: none;
+        padding: 4% 4% 4% 16%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8%;
+
+        @media screen and (max-width:960px) {
+            margin-top: 10%;
+            margin-bottom: 25%;
+            margin-left: 26%;
+
+        }
+
+    }
+
+    & li:active {
+        background: rgb(106, 106, 228);
+    }
+
+    &__divico {
+        width: 20%;
+    }
+
+    &__dashboard {
+
+        margin-bottom: 40%;
+    }
+
+    &__list {
+        @media screen and (max-width:960px) {
+            display: none;
+        }
+    }
+
+}
+#menu11{
+    padding-top: 10%;
+}
+#menu1{
+    padding-bottom: 20%;
+}
+
+.topBar {
+    position: absolute;
+    width: 87%;
+    height: 3vw;
+    border: 2px solid black;
+    top: 0;
+    left: 13%;
+    @media screen and (max-width:960px) {
+        height: 4vw;
+    }
+    @media screen and (max-width:500px) {
+       height: 5vw ;
+    }
+    @media screen and (max-width:360px) {
+        height: 6vw;
+    }
+
+    &__titleAdmin {
+        position: absolute;
+        text-align: center;
+        top:15%;
+        left: 37%;
+        font-size: 1.3vw;
+        @media screen and (max-width:960px) {
+            font-size: 1.9vw;
+            left: 30%;
+        }
+        @media screen and (max-width:500px) {
+            font-size: 2.4vw;
+            left: 25%;
+        }
+        @media screen and (max-width:360px) {
+            font-size: 2.8vw;
+            left: 20%;
+        }
+    }
+
+
+}
+
+.homePage {
+
+    position: fixed;
+    width: 87%;
+    height: 100%;
+    top: 6%;
+    left: 13%;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+
+    &__homeTitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+        color: rgb(106, 106, 228);
+    }
+
+    &__blocdiv {
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+
+    }
+
+    &__illustimg {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+}
+
+#adminPage,
+#mediaPage,
+#categoryPage,
+#postPage,
+#partnerPage,
+#teamPage,
+#destPage,
+#galPage,
+#eventPage,
+#homePage {
+    display: none;
+}

@@ -1,7 +1,7 @@
 {
-  "name": "kolnaexplorer",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Kolna Explorer Web Project",
+  "description": "portfolio  Web Project",
   "main": "index.js",
   "scripts": {
     "toCSS": "node-sass --output-style expanded --source-map=true scss -o css",
