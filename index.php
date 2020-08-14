@@ -44,31 +44,48 @@
         <div class="container">
             <div class="block">
                 <img src="/PORTFOLIO/Assets/www.png" alt="">
+                <h2>Web Development</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div>
             <div class="block">
                 <img src="/PORTFOLIO/Assets/phone (1).png" alt="">
+                <h2>Support</h2>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
                 <img src="/PORTFOLIO/Assets/rocket.png" alt="">
+
+                <h2>  Responsive Design</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
                 <img src="/PORTFOLIO/Assets/google-docs.png" alt="">
+                <h2>  Creative Design</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
                 <img src="/PORTFOLIO/Assets/repair (1).png" alt="">
+                <h2>  Graphic Design</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
+                <!-- <h2>Web Idea</h2> -->
                 <img src="/PORTFOLIO/Assets/idea (1).png" alt="">
+                <h2>Web Idea</h2>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
+                <!-- <h2>Support</h2> -->
                 <img src="/PORTFOLIO/Assets/email.png" alt="">
+                <h2>Support</h2>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
                 <img src="/PORTFOLIO/Assets/checklist.png" alt="">
+                <h2>Web Idea</h2>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block">
                 <img src="/PORTFOLIO/Assets/google-docs.png " alt="">
+                <h2>  Graphic Design</h2>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div>
            

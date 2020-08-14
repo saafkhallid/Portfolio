@@ -32,7 +32,7 @@
 
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo" src="/PORTFOLIO/Assets/coffee-2737047_1920.png">
+        <img class="  sectionTeam-photo" src="Assets/coffee-2737047_1920.png">
         <div><h1 class="title">  I'm web developer<br>
             Khalid saaf   </h1></div>
     </section>
@@ -40,16 +40,16 @@
     <section class="    portfolio-team    ">
         <h1  class= "portfolio-team--titre"> portfolio</h1>
         <div class="portfolio">
-            <div class="block"> <img src="Assets/git-logo_bv0ydu.jpg"  width="300px" height="300px"></div>
-            <div class="block"> <img src="Assets/index.png"   width="300px" height="300px"></div>
-            <div class="block"> <img src="Assets/d2a9b687-4591-4515-8295-8121616fa81d.png "   ></div>
-            <div class="block"> <img src="Assets/2627736e-afe9-4765-ac03-bab5d49cb5f8.jpg  "  ></div>
-            <div class="block"> <img src="Assets/blog.jpeg "  width="300px" height="300px"></div>
-            <div class="block"><img src="Assets/946a3fe1-5051-49e2-a839-45945305f4d0.jpg" 
+            <div class="block"> <img src="Assets\gallery_img-01.jpg"  ></div>
+            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+            <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
+            <div class="block"> <img src="Assets\gallery_img-04.jpg "  ></div>
+            <div class="block"> <img src="Assets\gallery_img-05.jpg" ></div>
+            <div class="block"><img src="Assets\gallery_img-06.jpg" 
                 ></div>
-            <div class="block"> <img src="Assets/2b67d09f-c186-424b-9009-b4d2394bb861.png"  width="300px" height="300px"></div>
-            <div class="block"> <img src="Assets/d836ece5-7c3d-4765-88f6-bd2b8b411d76.jpg "  ></div>
-            <div class="block"> <img src="Assets/front-end-web-developer-nanodegree--nd001.jpg " ></div>
+            <div class="block"> <img src="Assets\gallery_img-03.jpg"  ></div>
+            <div class="block"> <img src="Assets\gallery_img-05.jpg "  ></div>
+            <div class="block"> <img src="Assets\gallery_img-03.jpg" ></div>
 
 
 

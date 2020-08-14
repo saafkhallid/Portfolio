@@ -317,4 +317,8 @@ ul li .active {
   padding-top: 20px;
 }
 
+.service .container .block h2 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=accueil.css.map */
