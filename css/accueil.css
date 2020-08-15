@@ -299,6 +299,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: #16a122;
 }
 
 .service .container .block {

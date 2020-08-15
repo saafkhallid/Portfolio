@@ -105,18 +105,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 <nav>
         <div class="logo">
-            <a href="index.html"  target="_self" ><h1>Saaf</h1> </a>
+            <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
         </div>
         </div>
         <ul class="navMenu">
-            <li><a  href="index.html">Acceuil</a></li>
-            <li><a href="Apropo.html">À propos </a></li>
-            <li class="active" id="act"><a href="Apropo.html">portfolio</a>
+            <li><a  href="index.php">Acceuil</a></li>
+            <li><a href="Apropo.php">À propos </a></li>
+            <li class="active" id="act"><a href="Apropo.php">portfolio</a>
                 
             </li>
 
-            <li class="active"><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="login.html">login</a></li>
+            <li class="active"><a href="contact.php">Contact</a></li>
+            <li class="active"><a href="login.php">login</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>

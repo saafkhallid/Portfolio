@@ -244,7 +244,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 
             </li>
 
-            <li class="active"><a href="contact.php">Contact</a></li>
+            <li ><a href="contact.php">Contact</a></li>
             <li class="active"><a href="login.php">login</a></li>
         </ul>
         <div class="burger">
@@ -320,6 +320,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <h2>@ 2020 copyright all right reserved</h2>
         </div>
     </section>  
+
+
+
+
+    
 <script src="js/script.js"></script>
 
 </body>

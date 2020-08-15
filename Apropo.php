@@ -14,14 +14,14 @@
         </div>
         </div>
         <ul class="navMenu">
-            <li><a class="active" href="index.php">Acceuil</a></li>
-            <li><a href="Apropo.php">À propos </a></li>
-            <li class="active" id="act"><a href="portfolio.php">portfolio</a>
+            <li><a class="" href="index.php">Acceuil</a></li>
+            <li><a class=" active "href="Apropo.php">À propos </a></li>
+            <li class="" id="act"><a href="portfolio.php">portfolio</a>
                 
             </li>
 
-            <li class="active"><a href="contact.php">Contact</a></li>
-            <li class="active"><a href="login.php">login</a></li>
+            <li class=""><a href="contact.php">Contact</a></li>
+            <li class=""><a href="login.php">login</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
