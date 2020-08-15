@@ -40,16 +40,16 @@
     <section class="    portfolio-team    ">
         <h1  class= "portfolio-team--titre"> portfolio</h1>
         <div class="portfolio">
-            <div class="block"> <img src="Assets\gallery_img-01.jpg"  ></div>
-            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
-            <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
-            <div class="block"> <img src="Assets\gallery_img-04.jpg "  ></div>
-            <div class="block"> <img src="Assets\gallery_img-05.jpg" ></div>
-            <div class="block"><img src="Assets\gallery_img-06.jpg" 
+            <div class="block1"> <img src="Assets\gallery_img-01.jpg"  ></div>
+            <div class="block2"> <img src="Assets\gallery_img-02.jpg"     ></div>
+            <div class="block3"> <img src="Assets\gallery_img-03.jpg"   ></div>
+            <div class="block4"> <img src="Assets\gallery_img-04.jpg "  ></div>
+            <div class="block5"> <img src="Assets\gallery_img-05.jpg" ></div>
+            <div class="block6"><img src="Assets\gallery_img-06.jpg" 
                 ></div>
-            <div class="block"> <img src="Assets\gallery_img-03.jpg"  ></div>
-            <div class="block"> <img src="Assets\gallery_img-05.jpg "  ></div>
-            <div class="block"> <img src="Assets\gallery_img-03.jpg" ></div>
+            <div class="block7"> <img src="Assets\gallery_img-03.jpg"  ></div>
+            <div class="block8"> <img src="Assets\gallery_img-05.jpg "  ></div>
+            <div class="block9"> <img src="Assets\gallery_img-03.jpg" ></div>
 
 
 
@@ -63,10 +63,10 @@
         <div class="footer">
             <h1>Saaf</h1>
             <div class="logo">
-                <img src="/Assets/twitter.png" alt="">
-                <img src="/Assets/facebook-2.png" alt="">
-                <img src="/Assets/youtube.png" alt="">
-                <img src="/Assets/linkedin.png" alt="">
+                <img src="/PORTFOLIO/Assets/twitter.png" alt="">
+                <img src="/PORTFOLIO/Assets/facebook-2.png" alt="">
+                <img src="/PORTFOLIO/Assets/youtube.png" alt="">
+                <img src="/PORTFOLIO/Assets/linkedin.png" alt="">
             </div>
             <h2>@ 2020 copyright all right reserved</h2>
         </div>

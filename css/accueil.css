@@ -284,43 +284,51 @@ ul li .active {
 }
 
 .service {
-  margin-top: 80px;
-  margin-right: auto;
-  margin-left: 10%;
+  background: #f5efef;
+  padding-bottom: 40px;
 }
 
 .service h1 {
   text-align: center;
-  margin-right: 13%;
 }
 
 .service .container {
-  width: 90%;
+  padding-top: 50px;
+  width: 80%;
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #3fa158;
-  margin-bottom: 30px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 0 auto;
 }
 
-.service .container .block {
+.service .container .block0, .service .container .block1, .service .container .block2, .service .container .block3, .service .container .block4, .service .container .block5, .service .container .block6, .service .container .block7, .service .container .block8 {
   height: 400px;
-  width: 300px;
+  width: auto;
   padding-top: 50px;
+  background: #cfc6c6;
+  border-radius: 3px;
+  box-shadow: 5px 10px #888888;
+  cursor: pointer;
 }
 
-.service .container .block img {
+.service .container .block0 .block0, .service .container .block0 .block1, .service .container .block0 .block2, .service .container .block0 .block3, .service .container .block0 .block4, .service .container .block0 .block5, .service .container .block0 .block6, .service .container .block0 .block7, .service .container .block0 .block8:active, .service .container .block1 .block0, .service .container .block1 .block1, .service .container .block1 .block2, .service .container .block1 .block3, .service .container .block1 .block4, .service .container .block1 .block5, .service .container .block1 .block6, .service .container .block1 .block7, .service .container .block1 .block8:active, .service .container .block2 .block0, .service .container .block2 .block1, .service .container .block2 .block2, .service .container .block2 .block3, .service .container .block2 .block4, .service .container .block2 .block5, .service .container .block2 .block6, .service .container .block2 .block7, .service .container .block2 .block8:active, .service .container .block3 .block0, .service .container .block3 .block1, .service .container .block3 .block2, .service .container .block3 .block3, .service .container .block3 .block4, .service .container .block3 .block5, .service .container .block3 .block6, .service .container .block3 .block7, .service .container .block3 .block8:active, .service .container .block4 .block0, .service .container .block4 .block1, .service .container .block4 .block2, .service .container .block4 .block3, .service .container .block4 .block4, .service .container .block4 .block5, .service .container .block4 .block6, .service .container .block4 .block7, .service .container .block4 .block8:active, .service .container .block5 .block0, .service .container .block5 .block1, .service .container .block5 .block2, .service .container .block5 .block3, .service .container .block5 .block4, .service .container .block5 .block5, .service .container .block5 .block6, .service .container .block5 .block7, .service .container .block5 .block8:active, .service .container .block6 .block0, .service .container .block6 .block1, .service .container .block6 .block2, .service .container .block6 .block3, .service .container .block6 .block4, .service .container .block6 .block5, .service .container .block6 .block6, .service .container .block6 .block7, .service .container .block6 .block8:active, .service .container .block7 .block0, .service .container .block7 .block1, .service .container .block7 .block2, .service .container .block7 .block3, .service .container .block7 .block4, .service .container .block7 .block5, .service .container .block7 .block6, .service .container .block7 .block7, .service .container .block7 .block8:active, .service .container .block8 .block0, .service .container .block8 .block1, .service .container .block8 .block2, .service .container .block8 .block3, .service .container .block8 .block4, .service .container .block8 .block5, .service .container .block8 .block6, .service .container .block8 .block7, .service .container .block8 .block8:active {
+  background-color: aqua;
+}
+
+.service .container .block0 img, .service .container .block1 img, .service .container .block2 img, .service .container .block3 img, .service .container .block4 img, .service .container .block5 img, .service .container .block6 img, .service .container .block7 img, .service .container .block8 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.service .container .block p {
+.service .container .block0 p, .service .container .block1 p, .service .container .block2 p, .service .container .block3 p, .service .container .block4 p, .service .container .block5 p, .service .container .block6 p, .service .container .block7 p, .service .container .block8 p {
   padding-top: 20px;
 }
 
-.service .container .block h2 {
+.service .container .block0 h2, .service .container .block1 h2, .service .container .block2 h2, .service .container .block3 h2, .service .container .block4 h2, .service .container .block5 h2, .service .container .block6 h2, .service .container .block7 h2, .service .container .block8 h2 {
   text-align: center;
 }
 

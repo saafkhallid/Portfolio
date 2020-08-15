@@ -37,7 +37,7 @@ input[type=text],input[type= email], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #d1d420;
+    background-color: #dbdb12;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -52,10 +52,13 @@ input[type=text],input[type= email], select, textarea {
   }
   
   /* Add a background color and some padding around the form */
+
+  
   .container {
     width: 50%;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #c9d42c;
+
         // background-color: #c44848;
 
     display: block;
