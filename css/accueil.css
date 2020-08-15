@@ -295,11 +295,13 @@ ul li .active {
 }
 
 .service .container {
+  width: 90%;
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #16a122;
+  background-color: #3fa158;
+  margin-bottom: 30px;
 }
 
 .service .container .block {
