@@ -305,6 +305,7 @@ ul li .active {
 .portfolio-team .portfolio .block1 {
   grid-column: 1/2;
   grid-row: 1/2;
+  box-shadow: bisque;
 }
 
 .portfolio-team .portfolio .block2 {
