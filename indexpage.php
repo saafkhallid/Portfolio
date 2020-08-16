@@ -39,10 +39,10 @@
 		</div>
 
 		<div class="main-content">
-			<h1> Welcome page Administration</h1>
+			<h1> Welcome page   accuil</h1>
 			
       <div class="">
-				
+				<!--code-->
 				
 				</div>
 				

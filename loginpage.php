@@ -22,9 +22,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-	<style type="text/css">
+	<!-- <style type="text/css">
         body{ font: 14px sans-serif; text-align: center; }
-    </style>
+    </style> -->
  
 
      
@@ -44,11 +44,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 			<nav>
 				<a href="#" class="">Administration<span>page</span></a>
 				<ul>
-					<li ><a href="#">Dashboard</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">contact</a></li>
-					<li><a href="#">accuil</a></li>
-					<li class="active"><a href="#">login</a></li>
+					<li class="active" ><a href="#">Dashboard</a></li>
+					<li><a href="portfoliopage.php">Portfolio</a></li>
+					<li><a href=" contactpage.php ">contact</a></li>
+					<li><a href=" indexpage.php">accuil</a></li>
+					<li class="" ><a href="loginpage.php ">login</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -114,7 +114,7 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: Administration.php");
+    header("location: loginpage.php");
     exit;
 }
  
@@ -174,7 +174,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            // header("location:Administration.php");
+                            header("location:loginpage.php");
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
@@ -203,28 +203,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <!-- <link rel="stylesheet" href="css/login.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">  -->
+    
     <link rel="stylesheet" href="css/login.css">
    <style src="css/text">
-       /* .wrapper{
-           margin:auto;
-           width:500px;
-           max-width:90%;
-             /* .form-group{
-
-             } */
-/* 
-       }
-
-       .form{
-        width: 100%;
-            height: 100%;
-            padding:20px;
-
-    
-                } */ 
-       
+     
        
    </style>
 

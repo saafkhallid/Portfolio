@@ -28,22 +28,32 @@
 		<div class="sidebar">
 			<nav>
 				<a href="#" class="">Administration<span>page</span></a>
-				<ul>
+				
+					<!-- <li class="active" ><a href="#">Dashboard</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="#">accuil</a></li>
+					<li class="" ><a href="loginpage.php ">login</a></li> -->
+
+
+                    <ul>
 					<li class="active" ><a href="#">Dashboard</a></li>
 					<li><a href="portfoliopage.php">Portfolio</a></li>
 					<li><a href=" contactpage.php ">contact</a></li>
 					<li><a href=" indexpage.php">accuil</a></li>
 					<li class="" ><a href="loginpage.php ">login</a></li>
 				</ul>
+				
 			</nav>
 		</div>
 
 		<div class="main-content">
-			<h1> Welcome page Administration</h1>
+			<h1> Welcome page  contact</h1>
 			
       <div class="">
 				
-				
+								<!--code-->
+
 				</div>
 				
 			</div>
