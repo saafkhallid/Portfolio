@@ -1,105 +1,3 @@
-<!-- 
-
-// include 'connexion.php';
-
-
-// session_start();
-
-// if(isset($_POST['submit'])){
-
-//      $name=htmlspecialchars(strtolower(trim($_POST['Username'])));
-//      $password=md5(($_POST['Password']));
-        
-//      $query="SELECT*FROM login WHERE Username='$name' &&  Password='$password' ";
-//             //  header("Location:Administration.php");
-
-//     if (mysqli_num_rows(mysqli_query($con,$query>0)))  
-//     {
-//         $_SESSION['Username']=$name;
-//         header("Location:Administration.php");
-        
-//     }else {
-//         echo "name ou password est faut";
-//     }
-    
-     
-// }
-
-
-// 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-
-    <title>login</title>
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <a href="index.html"  target="_self" ><h1>Saaf</h1> </a>
-        </div>
-        </div>
-        <ul class="navMenu">
-            <li><a  href="index.html">Acceuil</a></li>
-            <li><a href="Apropo.html">À propos </a></li>
-            <li class="active" id="act"><a href="Apropo.html">portfolio</a>
-                
-            </li>
-
-            <li class="active"><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="login.html">login</a></li>
-        </ul>
-        <div class="burger">
-            <div class="burger__line1"></div>
-            <div class="burger__line2"></div>
-            <div class="burger__line3"></div>
-        </div>
-    </nav>
-    <section class="sectionlogin">
-        
-        <img class="  sectionlogin-photo" src="/PORTFOLIO/Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
-       
-    
-    
-    </section>
-    <section class="login">
-        <div class="logoinbox">
-            <img src="/PORTFOLIO/Assets/Avatar.png" alt="" class="avatar" >
-            <h1>Login Here</h1>
-            <form   method="POST" action="">
-                <p>Username</p>
-                <input type="text" name ="Username" placeholder="Enter Username" required>
-                <p>Password</p>
-                <input type="password" name ="Password" placeholder="Enter password" required>
-                <input type="submit" name="submit" value="Login">
-                <a href="#"> Lost your password</a> <br>
-                <a href="#"> Don't have   an  account</a> 
-
-            </form>
-
-            
-        </div>
-    </section>
-    <section>
-        <div class="footer">
-            <h1>Saaf</h1>
-            <div class="logo">
-                <img src="/PORTFOLIO/Assets/twitter.png" alt="">
-                <img src="/PORTFOLIO/Assets/facebook-2.png" alt="">
-                <img src="/PORTFOLIO/Assets/youtube.png" alt="">
-                <img src="/PORTFOLIO/Assets/linkedin.png" alt="">
-            </div>
-            <h2>@ 2020 copyright all right reserved</h2>
-        </div>
-    </section>
-    
-</body>
-
-</html> -->
 
 
 
@@ -205,11 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login</title>
     
     <link rel="stylesheet" href="css/login.css">
-   <style src="css/text">
-     
-       
-   </style>
-
+   
    
 </head>
 <body>
@@ -235,6 +129,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="burger__line3"></div>
         </div>
 </nav>
+
+
+
+
     <section class="sectionlogin">
         
         <img class="  sectionlogin-photo" src="/PORTFOLIO/Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
@@ -243,31 +141,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     </section>
     
-    <!-- <div class="wrapper" >
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
-            </div>    
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control">
-                <span class="help-block"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
-            </div>
-            <p class="forgot ">Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        </form>
-    </div>  -->
+   
         
-       <section class="saaf">   
+<section class="saaf">   
       <div class="container" >
         <h2 class="">Login</h2>
-        <!-- <p>Please fill in your credentials to login.</p> -->
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <p>Please fill in your credentials to login.</p>
 
@@ -287,7 +165,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p class="forgot ">Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>
-    </section> 
+</section> 
         
 
       <section>
@@ -307,7 +185,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
     
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
