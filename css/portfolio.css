@@ -354,4 +354,10 @@ ul li .active {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1400px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 /*# sourceMappingURL=portfolio.css.map */

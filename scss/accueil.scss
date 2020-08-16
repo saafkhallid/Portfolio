@@ -12,8 +12,15 @@ body {
     font-family: nunito, sans-serif;
   
 }
-@import '_menu.scss';
-@import '_footer.scss';
+
+
+
+
+// @import '_menu.scss';
+// @import '_footer.scss';
+
+
+
 .sectionTeam{
     margin-top: 10px;
     .sectionTeam-photo {
@@ -89,3 +96,32 @@ body {
         }
     }
 }
+
+
+@media only screen and (max-width:1400px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+
+
+
+
+
+
+
+//   @media only screen and (max-width:768px) {
+//     body {
+//       background-color: lightblue;
+//     }
+//   }
+
+//   @media only screen and (max-width:375px) {
+//     body {
+//       background-color: lightblue;
+//     }
+//   }
+
+
+
