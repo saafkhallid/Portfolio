@@ -16,8 +16,8 @@ body {
 
 
 
-// @import '_menu.scss';
-// @import '_footer.scss';
+@import '_menu.scss';
+@import '_footer.scss';
 
 
 
@@ -98,9 +98,24 @@ body {
 }
 
 
-// @media only screen and (max-width:1400px) {
-//     body {
+@media only screen and (max-width:1400px) {
+    body {
 
+        .sectionTeam {
+
+          .title {
+              top: 30%;
+              font-size:30px;
+  
+          }
+        }
+      }
+  }
+
+
+
+//   @media only screen and (max-width:1024px) {
+//     body {
 //     }
 //   }
 
@@ -111,17 +126,31 @@ body {
 
 
 
-//   @media only screen and (max-width:768px) {
-//     body {
-//       background-color: lightblue;
-//     }
-//   }
+  @media only screen and (max-width:768px) {
+    body {
+
+      .sectionTeam {
+        .title {
+            top: 30%;
+            font-size:30px;
+
+        }
+      }
+    }
+  }
 
 //   @media only screen and (max-width:375px) {
 //     body {
-//       background-color: lightblue;
+//         width: 100%;
+
+//         .sectionTeam {
+//             .title {
+//                 top: 30%;
+//                 font-size:30px;
+    
+//             }
 //     }
-//   }
+// }
 
 
 
