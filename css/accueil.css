@@ -304,18 +304,24 @@ ul li .active {
   margin: 0 auto;
 }
 
+.service .container .container-p {
+  width: 90%;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.service .container .container-h {
+  padding-top: 20px;
+}
+
 .service .container .block0, .service .container .block1, .service .container .block2, .service .container .block3, .service .container .block4, .service .container .block5, .service .container .block6, .service .container .block7, .service .container .block8 {
   height: 400px;
   width: auto;
   padding-top: 50px;
-  background: #cfc6c6;
+  background: rgba(238, 233, 233, 0.801);
   border-radius: 3px;
   box-shadow: 5px 10px #888888;
   cursor: pointer;
-}
-
-.service .container .block0 .block0, .service .container .block0 .block1, .service .container .block0 .block2, .service .container .block0 .block3, .service .container .block0 .block4, .service .container .block0 .block5, .service .container .block0 .block6, .service .container .block0 .block7, .service .container .block0 .block8:active, .service .container .block1 .block0, .service .container .block1 .block1, .service .container .block1 .block2, .service .container .block1 .block3, .service .container .block1 .block4, .service .container .block1 .block5, .service .container .block1 .block6, .service .container .block1 .block7, .service .container .block1 .block8:active, .service .container .block2 .block0, .service .container .block2 .block1, .service .container .block2 .block2, .service .container .block2 .block3, .service .container .block2 .block4, .service .container .block2 .block5, .service .container .block2 .block6, .service .container .block2 .block7, .service .container .block2 .block8:active, .service .container .block3 .block0, .service .container .block3 .block1, .service .container .block3 .block2, .service .container .block3 .block3, .service .container .block3 .block4, .service .container .block3 .block5, .service .container .block3 .block6, .service .container .block3 .block7, .service .container .block3 .block8:active, .service .container .block4 .block0, .service .container .block4 .block1, .service .container .block4 .block2, .service .container .block4 .block3, .service .container .block4 .block4, .service .container .block4 .block5, .service .container .block4 .block6, .service .container .block4 .block7, .service .container .block4 .block8:active, .service .container .block5 .block0, .service .container .block5 .block1, .service .container .block5 .block2, .service .container .block5 .block3, .service .container .block5 .block4, .service .container .block5 .block5, .service .container .block5 .block6, .service .container .block5 .block7, .service .container .block5 .block8:active, .service .container .block6 .block0, .service .container .block6 .block1, .service .container .block6 .block2, .service .container .block6 .block3, .service .container .block6 .block4, .service .container .block6 .block5, .service .container .block6 .block6, .service .container .block6 .block7, .service .container .block6 .block8:active, .service .container .block7 .block0, .service .container .block7 .block1, .service .container .block7 .block2, .service .container .block7 .block3, .service .container .block7 .block4, .service .container .block7 .block5, .service .container .block7 .block6, .service .container .block7 .block7, .service .container .block7 .block8:active, .service .container .block8 .block0, .service .container .block8 .block1, .service .container .block8 .block2, .service .container .block8 .block3, .service .container .block8 .block4, .service .container .block8 .block5, .service .container .block8 .block6, .service .container .block8 .block7, .service .container .block8 .block8:active {
-  background-color: aqua;
 }
 
 .service .container .block0 img, .service .container .block1 img, .service .container .block2 img, .service .container .block3 img, .service .container .block4 img, .service .container .block5 img, .service .container .block6 img, .service .container .block7 img, .service .container .block8 img {
@@ -339,10 +345,29 @@ ul li .active {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   body .sectionTeam .title {
     top: 30%;
     font-size: 30px;
+  }
+  body .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  body .container .block0 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  body .container .block1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
 }
 

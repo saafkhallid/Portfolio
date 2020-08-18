@@ -1,4 +1,34 @@
 
+                <?php 
+                        $name = $subject = $email = $message = "";
+                        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                        
+                            $firstname = $_POST['firstname'];
+                            $email = $_POST['email']; 
+                            $subject = $_POST['subject'];
+                            $message = $_POST['body'];
+                            $email_from = 'kolnaexplorer@gmail.com';
+
+                            $email_subject = "New form submission";
+
+                            $email_body = "User Name: $name.\n".
+                                                "User Email: $email.\n".
+                                                    "User subject: $subject.\n".
+                                                        "User Message: $message.\n";
+
+
+                            $to = "meachkaddour1@gmail.com";
+
+                            $headers = "From: $email_from \r\n";
+
+                            $headers .= "Reply-To: $email \r\n";
+                            mail($to,$email_subject,$email_body,$headers);
+
+                            header("Location: contact.php");
+                        
+                        }
+ 
+                    ?>
 
 
 <!DOCTYPE html>
@@ -54,7 +84,7 @@
 
 
 
-            <form method="POST" action="action.php">
+            <form method="POST" action="contact.php">
           
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
