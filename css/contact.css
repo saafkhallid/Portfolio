@@ -305,6 +305,7 @@ input[type=submit] {
   background-color: #dbdb12;
   color: white;
   padding: 10px 25px;
+  width: 150px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -312,25 +313,48 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #d4e4d5;
 }
 
 /* Add a background color and some padding around the form */
 .container {
   width: 50%;
   border-radius: 5px;
-  background-color: #cddfcd;
+  background-color: black;
   display: block;
   margin: 0 auto;
   padding: 20px;
 }
 
 .contact {
+  padding-top: 10px;
   height: 900px;
 }
 
+.contact .alert {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  width: 50%;
+  margin: 0 auto 30px;
+  padding-top: 25px;
+  height: 100px;
+  border-radius: 5px;
+  color: white;
+}
+
+.contact .alert-danger {
+  background-color: rgba(226, 27, 136, 0.829);
+}
+
+.contact .alert-success {
+  background-color: rgba(156, 226, 27, 0.87);
+}
+
 .contact .block0 {
-  height: 150px;
+  padding-top: 40;
+  height: 100px;
+  display: block;
 }
 
 .contact .block0 .contat--titre {
@@ -340,10 +364,8 @@ input[type=submit]:hover {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1400px) {
-  body {
-    background-color: lightblue;
-  }
+.container-label {
+  color: white;
 }
 
 /*# sourceMappingURL=contact.css.map */

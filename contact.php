@@ -1,34 +1,5 @@
 
-                <?php 
-                        $name = $subject = $email = $message = "";
-                        if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                        
-                            $firstname = $_POST['firstname'];
-                            $email = $_POST['email']; 
-                            $subject = $_POST['subject'];
-                            $message = $_POST['body'];
-                            $email_from = 'kolnaexplorer@gmail.com';
-
-                            $email_subject = "New form submission";
-
-                            $email_body = "User Name: $name.\n".
-                                                "User Email: $email.\n".
-                                                    "User subject: $subject.\n".
-                                                        "User Message: $message.\n";
-
-
-                            $to = "meachkaddour1@gmail.com";
-
-                            $headers = "From: $email_from \r\n";
-
-                            $headers .= "Reply-To: $email \r\n";
-                            mail($to,$email_subject,$email_body,$headers);
-
-                            header("Location: contact.php");
-                        
-                        }
- 
-                    ?>
+              
 
 
 <!DOCTYPE html>
@@ -78,25 +49,41 @@
     <section class="contact">
 
         <div class="block0"> <h1 class="contat--titre">contact</h1></div>
+                        <?php 
+
+                                $Msg = "";
+                                if(isset($_GET['error']))
+                                {
+                                    $Msg = " Please Fill in the Blanks ";
+                                    echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                                }
+
+                                if(isset($_GET['success']))
+                                {
+                                    $Msg = " Your Message Has Been Sent ";
+                                    echo '<div class="alert alert-success">'.$Msg.'</div>';
+                                }
+                        
+                        ?>
         <div class="container">
 
        
 
 
 
-            <form method="POST" action="contact.php">
+            <form method="POST" action="PROCESS.PHP"  >
           
-              <label for="fname">First Name</label>
+              <label class="container-label"for="fname">username:</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label  class="container-label" for="lname">Subject:</label>
+              <input type="text" id="lname" name="subject" placeholder="Your last name..">
           
-              <label for="email">Email: </label>
+              <label class="container-label" for="email">Email: </label>
                 <input type="email" id="lname" name="Email" placeholder="Enter your email:">
           
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <label class="container-label"for="subject">Message</label>
+              <textarea id="subject" name="Message" placeholder="Write something.." style="height:200px"></textarea>
           
               <input type="submit"  name="add" value="Submit" >
           
