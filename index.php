@@ -106,6 +106,7 @@
             <h2>@ 2020 copyright all right reserved</h2>
         </div>
     </section>
-    <script src=""></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>

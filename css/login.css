@@ -29,7 +29,7 @@ nav {
 }
 
 .navMenu {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -260,6 +260,37 @@ ul li .active {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+  .footer h1 {
+    font-size: 20px;
+  }
+  .footer .logo img {
+    width: 50px;
+  }
+  .footer h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .footer {
+    width: 100%;
+  }
+  .footer h1 {
+    font-size: 18px;
+  }
+  .footer .logo img {
+    width: 50px;
+    height: auto;
+  }
+  .footer h2 {
+    font-size: 16px;
+  }
+}
+
 .sectionlogin {
   margin-top: 10px;
 }
@@ -388,7 +419,7 @@ ul li .active {
 
 @media only screen and (max-width: 1400px) {
   body {
-    background-color: lightblue;
+    width: 100%;
   }
 }
 

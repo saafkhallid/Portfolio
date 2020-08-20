@@ -27,4 +27,4 @@ const navSlide = () => {
 // alert("bienvenu portfolio khalid saaf")
 
 
-alert("bonjour tout le monde")
+// alert("bonjour tout le monde")

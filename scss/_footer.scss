@@ -23,3 +23,43 @@
         color: white;
     }
 }
+
+
+
+
+@media only screen and (max-width:768px) {
+   .footer{
+       width: 100%;
+       h1{
+           font-size: 20px;
+       }
+       .logo {
+           img{
+            width: 50px;  
+           }
+       }
+       h2{
+           font-size: 18px;
+       }
+   }
+  }
+
+
+
+  @media only screen and (max-width:414px) {
+    .footer{
+        width: 100%;
+        h1{
+            font-size:  18px;
+        }
+        .logo {
+            img{
+             width: 50px;
+             height: auto;  
+            }
+        }
+        h2{
+            font-size: 16px;
+        }
+    }
+   }

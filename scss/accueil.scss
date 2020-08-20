@@ -149,9 +149,12 @@ body {
       .container {
         width: 100%;
         // background: blue;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(38, 27, 196);
        
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
        
         .block0{
             grid-row: 1/2;

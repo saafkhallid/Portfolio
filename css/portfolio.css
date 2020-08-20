@@ -29,7 +29,7 @@ nav {
 }
 
 .navMenu {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -260,6 +260,37 @@ ul li .active {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+  .footer h1 {
+    font-size: 20px;
+  }
+  .footer .logo img {
+    width: 50px;
+  }
+  .footer h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .footer {
+    width: 100%;
+  }
+  .footer h1 {
+    font-size: 18px;
+  }
+  .footer .logo img {
+    width: 50px;
+    height: auto;
+  }
+  .footer h2 {
+    font-size: 16px;
+  }
+}
+
 .sectionTeam {
   margin-top: 10px;
 }
@@ -354,9 +385,74 @@ ul li .active {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1280px) {
   body {
-    background-color: lightblue;
+    width: 100%;
+  }
+  body .portfolio-team {
+    width: 100%;
+  }
+  body .portfolio-team .portfolio {
+    width: 100%;
+  }
+  body .portfolio-team .portfolio .img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    top: 30%;
+    font-size: 35px;
+  }
+  body .portfolio-team {
+    width: 100%;
+  }
+  body .portfolio-team .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+  body .portfolio-team .portfolio img {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    font-size: 20px;
+    text-align: left;
+    top: 30%;
+  }
+  body .portfolio-team {
+    width: 100%;
+  }
+  body .portfolio-team .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+  body .portfolio-team .portfolio img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
   }
 }
 
