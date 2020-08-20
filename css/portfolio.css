@@ -329,7 +329,6 @@ ul li .active {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0 auto;
-  grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
 
@@ -383,6 +382,22 @@ ul li .active {
   width: 420px;
   height: auto;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+  body .portfolio-team {
+    width: 100%;
+  }
+  body .portfolio-team .portfolio {
+    width: 100%;
+  }
+  body .portfolio-team .portfolio .img {
+    width: 150px;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 1280px) {

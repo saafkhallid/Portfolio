@@ -1,4 +1,7 @@
+<?php
+include 'portfolioaction.php';
 
+?>
 
 
 
@@ -42,7 +45,20 @@
 			<h1> Welcome page portfolio</h1>
 			
       <div class="">
-				<!--code-->
+<form method="POST" action="portfoliopage.php" enctype="multipart/form-data">
+  	<div>
+  	  <input type="file" name="image">
+  	</div>
+  	<div>
+  		<button type="submit" name="upload"   >upload</button>
+  	</div>
+  </form>
+
+
+
+
+
+
 				
 				</div>
 				
@@ -50,14 +66,6 @@
 		</div>
 	</div>
 
-<!-- <?php
-
-
-
-
-
-
-?> -->
 
 
 </body>

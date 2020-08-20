@@ -41,6 +41,8 @@
         <h1  class= "portfolio-team--titre"> portfolio</h1>
         <div class="portfolio">
             <div class="block1"> <img src="Assets\gallery_img-01.jpg"  ></div>
+
+
             <div class="block2"> <img src="Assets\gallery_img-02.jpg"     ></div>
             <div class="block3"> <img src="Assets\gallery_img-03.jpg"   ></div>
             <div class="block4"> <img src="Assets\gallery_img-04.jpg "  ></div>

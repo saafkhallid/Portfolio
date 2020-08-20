@@ -61,7 +61,7 @@ body {
         grid-template-columns:1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0 auto;
-        grid-column-gap :5px;
+        // grid-column-gap :5px;
         grid-row-gap:5px;
         .block1{
             grid-column: 1/2;
@@ -113,6 +113,25 @@ body {
     }
     
 }
+
+
+
+@media only screen and (max-width:1440px) {
+    body {
+      width: 100%;
+      .portfolio-team{
+          width: 100%;
+          .portfolio{
+            width: 100%;
+            .img{
+                width: 150px;
+                height: auto;
+            }
+          }
+      }
+    }
+   
+  }
 
 
 
