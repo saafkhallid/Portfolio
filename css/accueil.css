@@ -392,7 +392,7 @@ ul li .active {
 
 .service .container .block0, .service .container .block1, .service .container .block2, .service .container .block3, .service .container .block4, .service .container .block5, .service .container .block6, .service .container .block7, .service .container .block8 {
   height: 400px;
-  width: auto;
+  width: 100%;
   padding-top: 50px;
   background: rgba(238, 233, 233, 0.801);
   border-radius: 3px;
@@ -404,10 +404,6 @@ ul li .active {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.service .container .block0 p, .service .container .block1 p, .service .container .block2 p, .service .container .block3 p, .service .container .block4 p, .service .container .block5 p, .service .container .block6 p, .service .container .block7 p, .service .container .block8 p {
-  padding-top: 20px;
 }
 
 .service .container .block0 h2, .service .container .block1 h2, .service .container .block2 h2, .service .container .block3 h2, .service .container .block4 h2, .service .container .block5 h2, .service .container .block6 h2, .service .container .block7 h2, .service .container .block8 h2 {
@@ -432,18 +428,42 @@ ul li .active {
     top: 30%;
     font-size: 30px;
   }
-  body .container {
+  body .service .container {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  body .container .block0 {
-    grid-row: 1/2;
-    grid-column: 1/2;
+  body .service .container .container-p {
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
   }
-  body .container .block1 {
-    grid-row: 2/3;
-    grid-column: 1/2;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    top: 30%;
+    font-size: 15px;
+  }
+  body .service .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  body .service .container .block0, body .service .container .block1, body .service .container .block2, body .service .container .block3, body .service .container .block4, body .service .container .block5, body .service .container .block6, body .service .container .block7, body .service .container .block8 {
+    height: 500px;
+  }
+  body .service .container .container-p {
+    padding-top: 20px;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
