@@ -345,6 +345,11 @@ ul li .active {
   grid-column: 1/2;
 }
 
+.about .aboutmy .information1 img {
+  width: 300px;
+  height: auto;
+}
+
 .about .aboutmy .information2 {
   grid-row: 1/2;
   grid-column: 2/3;
@@ -458,6 +463,101 @@ ul li .active {
 @media only screen and (max-width: 1400px) {
   body {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    font-size: 25px;
+  }
+  body .about {
+    width: 90%;
+    height: 500px;
+  }
+  body .about .aboutmy {
+    height: 300px;
+  }
+  body .about .aboutmy .information1 {
+    width: 50px;
+    height: auto;
+  }
+  body .about .aboutmy .information1 img {
+    width: 200px;
+    height: auto;
+  }
+  body .about .aboutmy .information2 .item1-saaf0 .item1-saaf0__titre {
+    font-size: 15px;
+  }
+  body .about .aboutmy .information2 .item1-saaf1 .saaf1--titre1 {
+    font-size: 18px;
+    color: #000;
+  }
+  body .about .aboutmy .information2 .item1-saaf2 .saaf2--titre2 {
+    font-size: 18px;
+    color: blue;
+  }
+  body .compétence {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    font-size: 18px;
+  }
+  body .about {
+    width: 90%;
+    height: 800px;
+  }
+  body .about .aboutmy {
+    flex-direction: column;
+    display: flex;
+  }
+  body .about .aboutmy .information1 {
+    height: auto;
+  }
+  body .about .aboutmy .information1 img {
+    width: 200px;
+    height: auto;
+  }
+  body .about .aboutmy .information2 {
+    display: flex;
+    flex-direction: column;
+  }
+  body .about .aboutmy .information2 .item1-saaf0 {
+    display: block;
+  }
+  body .about .aboutmy .information2 .item1-saaf0 .item1-saaf0__titre {
+    font-size: 15px;
+  }
+  body .about .aboutmy .information2 .item1-saaf1 {
+    display: block;
+  }
+  body .about .aboutmy .information2 .item1-saaf1 .saaf1--titre1 {
+    font-size: 18px;
+    color: #000;
+  }
+  body .about .aboutmy .information2 .item1-saaf2 {
+    display: block;
+  }
+  body .about .aboutmy .information2 .item1-saaf2 .saaf2--titre2 {
+    font-size: 18px;
+    color: blue;
+  }
+  body .compétence {
+    width: 90%;
   }
 }
 

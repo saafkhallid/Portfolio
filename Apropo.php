@@ -33,19 +33,19 @@
 
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo" src="/PORTFOLIO/Assets/flat-lay-of-black-frame-tablet-3774094(1).jpg">
+        <img class="  sectionTeam-photo" src="Assets/flat-lay-of-black-frame-tablet-3774094(1).jpg">
         <div><h1 class="title">  I'm web developer<br>
             Khalid saaf   </h1></div>
     </section> 
     <section class="about">
         <div class=" about-block "><h1 class="  about-block__titre  ">About Me</h1></div>
         <div class="aboutmy">
-            <div class="information1"><img src="/PORTFOLIO/Assets/adult-beard-boy-casual-220453.jpg" width="300px" alt="">
+            <div class="information1"><img src="Assets/adult-beard-boy-casual-220453.jpg"  alt="">
             
             </div>
            
             <div class="information2">
-                <div class="item1-saaf0"><h2 class="item1-saaf0__titre">  I'im Khalid saaf 
+                <div class="item1-saaf0"><h2 class=" item1-saaf0__titre  ">  I'im Khalid saaf 
                     A Lead web developper
                       </h2></div>
                 <div class="item1-saaf1">

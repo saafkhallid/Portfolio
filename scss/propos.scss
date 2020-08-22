@@ -66,6 +66,10 @@ body {
     .information1 {
         grid-row: 1/2;
         grid-column: 1/2;
+        img {
+            width: 300px;
+            height: auto;
+        }
     }
     .information2{
         grid-row: 1/2;
@@ -175,3 +179,132 @@ body {
         width: 100%;
     }
   }
+
+
+  @media only screen and (max-width:768px) {
+    body {
+        width: 100%;
+        .sectionTeam{
+            width: 100%;
+            .title{
+                font-size: 25px;
+            }
+        }
+        .about{
+            width: 90%;
+            height: 500px;
+            .aboutmy{
+                height: 300px;
+                .information1{
+                    width: 50px;
+                    height: auto;
+                    img {
+                        width: 200px;
+                        height: auto;
+                    }
+                }
+                .information2{
+                    // margin-left: 80px;
+                    .item1-saaf0{
+                        .item1-saaf0__titre{
+                            font-size: 15px;
+                        }
+                    } 
+                    .item1-saaf1{
+                        .saaf1--titre1 {
+                            font-size: 18px;
+                            color: #000;
+
+                        }
+
+                    } 
+                    .item1-saaf2{
+                        .saaf2--titre2{
+                            font-size: 18px;
+                            color:blue;
+                        }
+                    }                      
+
+                        
+
+                    }
+                }
+            }
+
+        .compétence{
+            width: 90%;
+
+        }    
+
+        }
+    }
+  
+    @media only screen and (max-width:375px) {
+        body {
+            width: 100%;
+            .sectionTeam{
+                width: 100%;
+                .title{
+                    font-size: 18px;
+                }
+            }
+            .about{
+                width:90%;
+                height: 800px;
+                .aboutmy{
+                    flex-direction: column;
+                    display: flex;
+                    // padding-top: 25px;
+                    .information1{
+                        // width: 100px;
+                        height: auto;
+                        img {
+                            width: 200px;
+                            height: auto;
+                        }
+                    }
+                    .information2{
+                        display: flex;
+                        flex-direction: column;
+
+                        // justify-content: center;
+                        //  padding-top: 100px;
+                        .item1-saaf0{
+                            // padding-top: 15px;
+                            display: block;
+                            .item1-saaf0__titre{
+                                font-size: 15px;
+                            }
+                        } 
+                        .item1-saaf1{
+                            display: block;
+
+                            .saaf1--titre1 {
+                                font-size: 18px;
+                                color: #000;
+    
+                            }
+    
+                        } 
+                        .item1-saaf2{
+                            display: block;
+
+                            .saaf2--titre2{
+                                font-size: 18px;
+                                color:blue;
+                            }
+                        }                      
+    
+                            
+    
+                        }
+                    }
+                }
+    
+            .compétence{
+                width: 90%;
+    
+            }    
+    
+            }
+        }
