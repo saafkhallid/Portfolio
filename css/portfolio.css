@@ -322,60 +322,12 @@ ul li .active {
 
 .portfolio-team .portfolio {
   padding-bottom: 10px;
-  align-self: center;
   padding-top: 60px;
-  width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 0 auto;
-  grid-row-gap: 5px;
-}
-
-.portfolio-team .portfolio .block1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  box-shadow: bisque;
-}
-
-.portfolio-team .portfolio .block2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.portfolio-team .portfolio .block3 {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.portfolio-team .portfolio .block4 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.portfolio-team .portfolio .block5 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.portfolio-team .portfolio .block6 {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.portfolio-team .portfolio .block-7 {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.portfolio-team .portfolio .block8 {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.portfolio-team .portfolio .block9 {
-  grid-column: 3/4;
-  grid-row: 3/4;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
 }
 
 .portfolio-team .portfolio img {
@@ -395,7 +347,7 @@ ul li .active {
     width: 100%;
   }
   body .portfolio-team .portfolio .img {
-    width: 150px;
+    width: 420px;
     height: auto;
   }
 }
@@ -430,16 +382,9 @@ ul li .active {
   body .portfolio-team {
     width: 100%;
   }
-  body .portfolio-team .portfolio {
-    display: flex;
-    flex-direction: column;
-  }
   body .portfolio-team .portfolio img {
     width: 500px;
     height: auto;
-    margin: 0 auto;
-    display: block;
-    padding-top: 20px;
   }
 }
 
@@ -457,10 +402,6 @@ ul li .active {
   }
   body .portfolio-team {
     width: 100%;
-  }
-  body .portfolio-team .portfolio {
-    display: flex;
-    flex-direction: column;
   }
   body .portfolio-team .portfolio img {
     width: 250px;

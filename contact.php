@@ -39,7 +39,7 @@
 
     <section class="sectionlogin">
         
-        <img class="  sectionlogin-photo" src="/PORTFOLIO/Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
+        <img class="  sectionlogin-photo" src="Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
        
     
     

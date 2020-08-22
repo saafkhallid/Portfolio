@@ -399,4 +399,13 @@ input[type=submit]:hover {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+  body .contact .container {
+    width: 90%;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */
