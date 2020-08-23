@@ -34,8 +34,8 @@
     <section class="sectionTeam">
         
         <img class="  sectionTeam-photo" src="Assets/flat-lay-of-black-frame-tablet-3774094(1).jpg">
-        <div><h1 class="title">  I'm web developer<br>
-            Khalid saaf   </h1></div>
+        <div><h1 class="title" id="text">  
+             </h1></div>
     </section> 
     <section class="about">
         <div class=" about-block "><h1 class="  about-block__titre  ">About Me</h1></div>
@@ -108,6 +108,7 @@
             <h2>@ 2020 copyright all right reserved</h2>
         </div>
     </section>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

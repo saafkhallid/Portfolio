@@ -314,6 +314,11 @@ ul li .active {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.sectionTeam .title:hover {
+  background-position: left center;
+  color: #c9c9ec;
+}
+
 .portfolio-team .portfolio-team--titre {
   font-size: 40px;
   color: #cfc0c0;
@@ -327,13 +332,19 @@ ul li .active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-between;
+}
+
+.portfolio-team .portfolio .block {
+  padding: 0px;
+  margin: 0px;
 }
 
 .portfolio-team .portfolio img {
   width: 420px;
   height: auto;
   cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 @media only screen and (max-width: 1440px) {

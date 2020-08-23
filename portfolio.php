@@ -33,25 +33,25 @@
     <section class="sectionTeam">
         
         <img class="  sectionTeam-photo" src="Assets/coffee-2737047_1920.png">
-        <div><h1 class="title">  I'm web developer<br>
-            Khalid saaf   </h1></div>
+        <div><h1 class="title" id="text">  <br>
+            </h1></div>
     </section>
 
     <section class="    portfolio-team    ">
         <h1  class= "portfolio-team--titre"> portfolio</h1>
         <div class="portfolio">
-            <div class="block1"> <img src="Assets\gallery_img-01.jpg"  ></div>
+            <div class="block"> <img src="Assets\gallery_img-01.jpg"  ></div>
 
 
-            <div class="block2"> <img src="Assets\gallery_img-02.jpg"     ></div>
-            <div class="block3"> <img src="Assets\gallery_img-03.jpg"   ></div>
-            <div class="block4"> <img src="Assets\gallery_img-04.jpg "  ></div>
-            <div class="block5"> <img src="Assets\gallery_img-05.jpg" ></div>
-            <div class="block6"><img src="Assets\gallery_img-06.jpg" 
+            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+            <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
+            <div class="block"> <img src="Assets\gallery_img-04.jpg "  ></div>
+            <div class="block"> <img src="Assets\gallery_img-05.jpg" ></div>
+            <div class="block"><img src="Assets\gallery_img-06.jpg" 
                 ></div>
-            <div class="block7"> <img src="Assets\gallery_img-03.jpg"  ></div>
-            <div class="block8"> <img src="Assets\gallery_img-05.jpg "  ></div>
-            <div class="block9"> <img src="Assets\gallery_img-03.jpg" ></div>
+            <div class="block"> <img src="Assets\gallery_img-03.jpg"  ></div>
+            <div class="block"> <img src="Assets\gallery_img-05.jpg "  ></div>
+            <div class="block"> <img src="Assets\gallery_img-03.jpg" ></div>
 
 
 
@@ -73,6 +73,7 @@
             <h2>@ 2020 copyright all right reserved</h2>
         </div>
     </section>
-    
+    <script src="js/script.js"></script>
+
 </body>
 </html>

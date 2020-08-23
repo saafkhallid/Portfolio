@@ -306,6 +306,9 @@ ul li .active {
 
 .sectionTeam .title {
   position: absolute;
+  width: 50%;
+  color: blue;
+  display: block;
   top: 70%;
   color: #ffff;
   left: 50%;

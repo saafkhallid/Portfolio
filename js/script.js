@@ -22,9 +22,17 @@ const navSlide = () => {
 
 
 
-// var x=20;
-// console.log(x);
-// alert("bienvenu portfolio khalid saaf")
 
 
-// alert("bonjour tout le monde")
+
+var i=0,text;
+  text = "  I'm web developer Khalid saaf "
+
+  function typing() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,90);
+    }
+  }
+  typing();
