@@ -66,13 +66,11 @@
                 <h2 class="container-h">  Graphic Design</h2>
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block5">
-                <!-- <h2>Web Idea</h2> -->
                 <img src="  Assets/idea (1).png" alt="">
                 <h2 class="container-h">Web Idea</h2>
 
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
             </div><div class="block6">
-                <!-- <h2>Support</h2> -->
                 <img src="  Assets/email.png" alt="">
                 <h2 class="container-h">Support</h2>
 
