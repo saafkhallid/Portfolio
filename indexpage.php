@@ -1,7 +1,6 @@
 <?php
 
 
-include 'indexaction.php'
 
 
 //   // Create database connection
@@ -112,6 +111,7 @@ include 'indexaction.php'
 
 // $resul = mysqli_query($connect, "SELECT * FROM  service");
 
+require 'indexaction.php';
 
 
 
@@ -170,7 +170,7 @@ include 'indexaction.php'
 			
       <div class="">
 				
-	  <form method="POST" action="indexpage.php" enctype="multipart/form-data">
+	  <form method="POST" action="" enctype="multipart/form-data">
 			<div>
 			<input type="file" name="service_image">
 			</div>
@@ -184,7 +184,7 @@ include 'indexaction.php'
 				<button type="submit" name=" add "   >upload</button>
 			</div>
 
- 		 </form>
+ 	</form>
 				</div>
 				
 			</div>
