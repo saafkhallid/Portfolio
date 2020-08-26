@@ -170,7 +170,7 @@ require 'indexaction.php';
 			
       <div class="">
 				
-	  <form method="POST" action="" enctype="multipart/form-data">
+	  <form method="POST" action="indexpage.php" enctype="multipart/form-data">
 			<div>
 			<input type="file" name="service_image">
 			</div>
@@ -178,7 +178,7 @@ require 'indexaction.php';
 			<input type="text" name="service_titre" placeholder="Your last title." >
 			</div>
 			<div>
-			<input type="text" name=" service_text "placeholder="Your last description.">
+			<input type="text" name=" service_text "placeholder="Your last text. ">
 			</div>
 			<div>
 				<button type="submit" name=" add "   >upload</button>

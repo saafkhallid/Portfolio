@@ -18,17 +18,30 @@
 // }
 
 
-try
-{
-    $db = new PDO('mysql:host=localhost;dbname=portfolio;charset=utf8','root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(PDOException $e)
-{
-        die('Erreur : '.$e->getMessage());
-} 
 
+
+
+// Database configuration
+$dbHost     = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName     = "portfolio";
+
+// Create database connection
+$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
+
+// Check connection
+if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
+}
 
 
 
 
 ?>
+
+
+
+
+
+

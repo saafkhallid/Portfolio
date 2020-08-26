@@ -1,6 +1,6 @@
 <?php
 
-require 'config.php';
+// require 'config.php';
 
 
 
@@ -158,6 +158,7 @@ require 'config.php';
 // $result = mysqli_query($connect, "SELECT * FROM service");
 
 
+include 'dbConfig.php';
 
 
 $update = false;
@@ -186,6 +187,58 @@ $update = false;
         $sth->execute();
         move_uploaded_file($_FILES['service_image']['tmp_name'],$upload);
     }
+
+
+
+
+
+                    //  include 'dbConfig.php';
+
+    
+
+						// // Include the database configuration file
+						// include 'dbConfig.php';
+						// $statusMsg = '';
+
+						// // File upload path
+						// $targetDir = "images/";
+						// $fileName = basename($_FILES["service_image"]["name"]);
+						// $targetFilePath = $targetDir . $fileName;
+						// $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+						// if(isset($_POST["add"]) && !empty($_FILES["service_image"]["name"])){
+
+
+                        //     $service_titre =valid_data ($_POST['service_titre']);
+                        //     $service_text= valid_data($_POST['service_text']);
+
+
+						// 	// Allow certain file formats
+						// 	$allowTypes = array('jpg','png','jpeg','gif','pdf');
+						// 	if(in_array($fileType, $allowTypes)){
+						// 		// Upload file to server
+						// 		if(move_uploaded_file($_FILES["service_image"]["tmp_name"], $targetFilePath)){
+						// 			// Insert image file name into database
+						// 			$insert = $db->query("INSERT into images (file_name, uploaded_on) VALUES ('".$fileName."', NOW())");
+						// 			if($insert){
+						// 				$statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+						// 			}else{
+						// 				$statusMsg = "File upload failed, please try again.";
+						// 			} 
+						// 		}else{
+						// 			$statusMsg = "Sorry, there was an error uploading your file.";
+						// 		}
+						// 	}else{
+						// 		$statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
+						// 	}
+						// }else{
+						// 	$statusMsg = 'Please select a file to upload.';
+						// }
+
+						// // Display status message
+						// echo $statusMsg;
+
+// 
 
 
     
