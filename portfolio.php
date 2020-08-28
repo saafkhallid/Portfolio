@@ -67,11 +67,23 @@ include 'portfolioaction.php';
                         <img src="<?php echo $imageURL; ?>" alt="" />
                     <?php }
                     }else{ ?>
-                        <p>No image(s) found...</p>
+                       echo "<p>"No image(s) found..."</p>"
                     <?php } ?> 
                     
                     </div>
 
+                   
+
+                    
+
+
+                    
+
+                  
+
+                   
+
+                   
             <!-- <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
             <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
             <div class="block"> <img src="Assets\gallery_img-04.jpg "  ></div>

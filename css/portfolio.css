@@ -319,10 +319,6 @@ ul li .active {
   color: #c9c9ec;
 }
 
-.portfolio-team {
-  background-color: blue;
-}
-
 .portfolio-team .portfolio-team--titre {
   font-size: 40px;
   color: #cfc0c0;
@@ -335,7 +331,7 @@ ul li .active {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .portfolio-team .portfolio .block {

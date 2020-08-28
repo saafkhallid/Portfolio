@@ -48,7 +48,6 @@ body {
 }
 
 .portfolio-team {
-  background-color: blue;
 
     .portfolio-team--titre{
         font-size: 40px;
@@ -62,8 +61,8 @@ body {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
-        margin:0 auto;
+        justify-content: center;
+        // margin:0 auto;
         .block{
 
           padding:0px;

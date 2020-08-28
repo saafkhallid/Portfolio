@@ -37,6 +37,7 @@
 
 						// Include the database configuration file
 						include 'dbConfig.php';
+
 						$statusMsg = '';
 
 						// File upload path
@@ -48,6 +49,8 @@
 						$fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
 
 						if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
+
+							
 							// Allow certain file formats
 							$allowTypes = array('jpg','png','jpeg','gif','pdf');
 							if(in_array($fileType, $allowTypes)){
