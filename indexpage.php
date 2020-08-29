@@ -110,13 +110,78 @@
 // }
 
 // $resul = mysqli_query($connect, "SELECT * FROM  service");
-
-require 'indexaction.php';
-
+// include 'indexaction.php';
 
 
 
-?>
+
+
+        // Create database connection
+		$dbname = mysqli_connect("localhost", "root", "", "portfolio");
+
+		if ($dbname==true) {
+			echo "connection base de donner";
+		}
+		else {
+			echo "not connection base de donner";
+		}
+		
+		  // include "config.php";
+		
+		  // Initialize message variable
+		  $msg = "";
+		
+		  // If upload button is clicked ...
+		  if (isset($_POST['add'])) {
+			  // Get image name
+			  $service_image = $_FILES['service_image']['name'];
+			  // Get text
+			  
+			  $service_titre = $_POST['service_titre'];
+		
+		
+			  $service_text = $_POST['service_text'];
+		
+		
+		
+		
+			  // image file directory
+			  $target = "images/".basename($service_image);
+		
+			  $link = "INSERT INTO services(service_image,service_titre,service_text)VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
+			  // execute query
+			  $res=mysqli_query($dbname, $link);
+			  if ($res==true) {
+				  echo "data inserted";
+			  }
+			  else {
+				  echo "data no inserted";
+			  }
+		
+		
+			  if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
+				  $msg = "Image uploaded successfully";
+			  }else{
+				  $msg = "Failed to upload image";
+			  }
+		  }
+		
+		
+		
+		  $resul = mysqli_query($dbname, "SELECT * FROM services");
+		
+		
+		
+		
+		
+			
+		
+		
+		?>
+
+
+
+
 
 
 
