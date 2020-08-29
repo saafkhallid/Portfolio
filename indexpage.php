@@ -117,9 +117,9 @@
 
 
         // Create database connection
-		$dbname = mysqli_connect("localhost", "root", "", "portfolio");
+		$dbName = mysqli_connect("localhost", "root", "", "portfolio");
 
-		if ($dbname==true) {
+		if ($dbName==true) {
 			echo "connection base de donner";
 		}
 		else {
@@ -148,9 +148,9 @@
 			  // image file directory
 			  $target = "images/".basename($service_image);
 		
-			  $link = "INSERT INTO services(service_image,service_titre,service_text)VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
+			  $sql = "INSERT INTO services(service_image,service_titre,service_text)VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
 			  // execute query
-			  $res=mysqli_query($dbname, $link);
+			  $res=mysqli_query($dbName, $sql);
 			  if ($res==true) {
 				  echo "data inserted";
 			  }
@@ -168,7 +168,7 @@
 		
 		
 		
-		  $resul = mysqli_query($dbname, "SELECT * FROM services");
+		  $resul = mysqli_query($dbName, "SELECT * FROM services");
 		
 		
 		

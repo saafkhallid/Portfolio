@@ -240,60 +240,63 @@
 
 
 
+											
+							// Create database connection
+					$db = mysqli_connect("localhost", "root", "", "portfolio");
+
+					if ($db==true) {
+						echo "connection base de donner";
+					}
+					else {
+
+						echo "not connection base de donner";
+					}
+
+					// include "config.php";
+
+					// Initialize message variable
+					$msg = "";
+
+					// If upload button is clicked ...
+					if (isset($_POST['add'])) {
+						// Get image name
+						$service_image = $_FILES['service_image']['name'];
+
+
+						// Get text
 						
-         // Create database connection
-  $db = mysqli_connect("localhost", "root", "", "portfolio");
-
-if ($db==true) {
-	echo "connection base de donner";
-}
-else {
-	echo "not connection base de donner";
-}
-
-  // include "config.php";
-
-  // Initialize message variable
-  $msg = "";
-
-  // If upload button is clicked ...
-  if (isset($_POST['add'])) {
-  	// Get image name
-  	$service_image = $_FILES['service_image']['name'];
-      // Get text
-      
-      $service_titre = $_POST['service_titre'];
+						$service_titre = $_POST['service_titre'];
 
 
-      $service_text = $_POST['service_text'];
+						$service_text = $_POST['service_text'];
 
 
 
 
-  	// image file directory
-  	$target = "images/".basename($service_image);
+						// image file directory
+						$target = "images/".basename($service_image);
 
-  	$sql = "INSERT INTO service (service_image,service_titre,service_text) VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
-  	// execute query
-	  $res=mysqli_query($db, $sql);
-	  if ($res==true) {
-		  echo "data inserted";
-	  }
-	  else {
-		  echo "data no inserted";
-	  }
-
-
-  	if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
-  		$msg = "Image uploaded successfully";
-  	}else{
-  		$msg = "Failed to upload image";
-  	}
-  }
+						$sql = "INSERT INTO service (service_image,service_titre,service_text) VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
+						// execute query
+						$result=mysqli_query($db, $sql);
+						if ($result==true) {
+							echo "data inserted";
+						}
+						else {
+							echo "data no inserted";
+						}
 
 
+						if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
+							$msg = "Image uploaded successfully";
+						}else{
+							$msg = "Failed to upload image";
+						}
+					}
 
-  $result = mysqli_query($db, "SELECT * FROM service");
+
+
+					$result = mysqli_query($db, "SELECT * FROM service");
 
 
 
