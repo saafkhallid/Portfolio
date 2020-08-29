@@ -53,7 +53,7 @@ include 'portfolioaction.php';
 
             <!-- <div class="block">  <img src="Assets\gallery_img-01.jpg"  ></div> -->
 
-                    <div class="block">  <?php
+                     <div class="block">  <?php
                     // Include the database configuration file
                     include 'dbConfig.php';
 
@@ -85,6 +85,8 @@ include 'portfolioaction.php';
 
                    
             <!-- <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+
             <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
             <div class="block"> <img src="Assets\gallery_img-04.jpg "  ></div>
             <div class="block"> <img src="Assets\gallery_img-05.jpg" ></div>

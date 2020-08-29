@@ -332,6 +332,7 @@ ul li .active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .portfolio-team .portfolio .block {
@@ -340,7 +341,7 @@ ul li .active {
 }
 
 .portfolio-team .portfolio img {
-  width: 420px;
+  width: 300px;
   height: auto;
   cursor: pointer;
   border-radius: 5px;
