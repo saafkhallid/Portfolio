@@ -67,8 +67,10 @@ include 'portfolioaction.php';
                         <img src="<?php echo $imageURL; ?>" alt="" />
                     <?php }
                     }else{ ?>
-                       echo "<p>"No image(s) found..."</p>"
-                    <?php } ?> 
+                       <p>"No image(s) found..."</p>"
+                    <?php 
+                    } 
+                     ?> 
                     
                     </div>
 
