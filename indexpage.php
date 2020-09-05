@@ -1,7 +1,7 @@
 <?php
 
 
-
+include "indexaction.php"
 
 //   // Create database connection
 //   $db = mysqli_connect("localhost", "root", "", "portfolio");
@@ -116,59 +116,59 @@
 
 
 
-        // Create database connection
-		$dbName = mysqli_connect("localhost", "root", "", "portfolio");
+        // // Create database connection
+		// $dbName = mysqli_connect("localhost", "root", "", "portfolio");
 
-		if ($dbName==true) {
-			echo "connection base de donner";
-		}
-		else {
-			echo "not connection base de donner";
-		}
+		// if ($dbName==true) {
+		// 	echo "connection base de donner";
+		// }
+		// else {
+		// 	echo "not connection base de donner";
+		// }
 		
-		  // include "config.php";
+		//   // include "config.php";
 		
-		  // Initialize message variable
-		  $msg = "";
+		//   // Initialize message variable
+		//   $msg = "";
 		
-		  // If upload button is clicked ...
-		  if (isset($_POST['add'])) {
-			  // Get image name
-			  $service_image = $_FILES['service_image']['name'];
-			  // Get text
+		//   // If upload button is clicked ...
+		//   if (isset($_POST['add'])) {
+		// 	  // Get image name
+		// 	  $service_image = $_FILES['service_image']['name'];
+		// 	  // Get text
 			  
-			  $service_titre = $_POST['service_titre'];
+		// 	  $service_titre = $_POST['service_titre'];
 		
 		
-			  $service_text = $_POST['service_text'];
-		
-		
-		
-		
-			  // image file directory
-			  $target = "images/".basename($service_image);
-		
-			  $sql = "INSERT INTO services(service_image,service_titre,service_text)VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
-			  // execute query
-			  $res=mysqli_query($dbName, $sql);
-			  if ($res==true) {
-				  echo "data inserted";
-			  }
-			  else {
-				  echo "data no inserted";
-			  }
-		
-		
-			  if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
-				  $msg = "Image uploaded successfully";
-			  }else{
-				  $msg = "Failed to upload image";
-			  }
-		  }
+		// 	  $service_text = $_POST['service_text'];
 		
 		
 		
-		  $resul = mysqli_query($dbName, "SELECT * FROM services");
+		
+		// 	  // image file directory
+		// 	  $target = "images/".basename($service_image);
+		
+		// 	  $sql = "INSERT INTO services(service_image,service_titre,service_text)VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
+		// 	  // execute query
+		// 	  $res=mysqli_query($dbName, $sql);
+		// 	  if ($res==true) {
+		// 		  echo "data inserted";
+		// 	  }
+		// 	  else {
+		// 		  echo "data no inserted";
+		// 	  }
+		
+		
+		// 	  if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
+		// 		  $msg = "Image uploaded successfully";
+		// 	  }else{
+		// 		  $msg = "Failed to upload image";
+		// 	  }
+		//   }
+		
+		
+		
+		//   $resul = mysqli_query($dbName, "SELECT * FROM services");
 		
 		
 		
@@ -243,10 +243,10 @@
 			<input type="text" name="service_titre" placeholder="Your last title." >
 			</div>
 			<div>
-			<input type="text" name=" service_text "placeholder="Your last text. ">
+			<input type="text" name="service_text"placeholder="Your last text. ">
 			</div>
 			<div>
-				<button type="submit" name=" add "   >upload</button>
+				<button type="submit" name="save">upload</button>
 			</div>
 
  	</form>

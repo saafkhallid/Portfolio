@@ -1,3 +1,11 @@
+<?php  
+ include "indexaction.php";
+//   $results = mysqli_query($db, "SELECT * FROM info"); 
+
+// //  print_r($results->fetch_assoc());
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,17 +50,29 @@
     <section class=" service ">
         <h1>Our service</h1>
         <div class="container">
+        <?php while ($row = mysqli_fetch_array($results)) { ?>
             <div class="block0">
-                <img src="Assets/www.png" alt="">
-                <h2 class="container-h"  >Web Development</h2>
-                <p class="container-p "   >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div>
-            <div class="block1">
+                <img src="images/<?= $row['service_image'];?>" alt="">
+                <h2 class="container-h"><?php echo $row['service_titre']; ?></h2>
+                <p class="container-p "><?php echo $row['service_text']; ?></p>
+            </div> 
+        <?php } ?>
+     
+
+
+
+            
+            <!-- <div class="block1">
                 <img src="   Assets/phone (1).png" alt="">
                 <h2  class="container-h">Support</h2>
 
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div><div class="block2">
+            </div> -->
+
+
+
+<!--             
+            <div class="block2">
                 <img src="   Assets/rocket.png" alt="">
 
                 <h2 class="container-h">  Responsive Design</h2>
@@ -85,7 +105,7 @@
                 <h2 class="container-h">  Graphic Design</h2>
 
                 <p class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div>
+            </div>  -->
            
             
 

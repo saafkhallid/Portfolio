@@ -142,127 +142,22 @@
 
 
 
-//     $target = "images/".basename($service_image);
 
 
+			session_start();
+				$db = mysqli_connect('localhost', 'root', '', 'portfolio');
 
-//     if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
-//         $Message = "Image uploaded successfully";
-        
-//     }else{
-//         $Message = "Failed to upload image";
-//     }
-    
-// }
+				// initialize variables
+				$service_text="";
+				$service_titre="";
+				$service_text="";
+				$id = 0;
+				$update = false;
 
-// $result = mysqli_query($connect, "SELECT * FROM service");
-
-
-// include 'dbConfig.php';
-
-
-// $update = false;
-
-//     $id=" ";
-//     $service_titre=" ";
-//     $service_text=" ";
-//     $service_image=" ";
-    
-    
-//     if(isset($_POST['add'])){                    
-    
-//         //test values on input
-//         $service_titre =valid_data ($_POST['service_titre']);
-//         $service_text= valid_data($_POST['service_text']);
-//         $service_image= $_FILES['service_image']['name'];
-//         $upload="images/".$service_image;
-    
-//          //insert values in  db
-//         $sth = $db->prepare("
-//         INSERT INTO service(service_image, service_titre,service_text)
-//         VALUES(:service_image,:service_titre,:service_text)");
-//         $sth->bindParam(':service_image',$upload);
-//         $sth->bindParam(':service_titre',$service_titre);
-//         $sth->bindParam(':service_text',$service_text);
-//         $sth->execute();
-//         move_uploaded_file($_FILES['service_image']['tmp_name'],$upload);
-//     }
-
-
-
-
-
-
-    
-
-						// // Include the database configuration file
-						// include 'dbConfig.php';
-						// $statusMsg = '';
-
-						// // File upload path
-						// $targetDir = "images/";
-						// $fileName = basename($_FILES["service_image"]["name"]);
-						// $targetFilePath = $targetDir . $fileName;
-						// $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-
-						// if(isset($_POST["add"]) && !empty($_FILES["service_image"]["name"])){
-
-
-                        //     $service_titre =valid_data ($_POST['service_titre']);
-                        //     $service_text= valid_data($_POST['service_text']);
-
-
-						// 	// Allow certain file formats
-						// 	$allowTypes = array('jpg','png','jpeg','gif','pdf');
-						// 	if(in_array($fileType, $allowTypes)){
-						// 		// Upload file to server
-						// 		if(move_uploaded_file($_FILES["service_image"]["tmp_name"], $targetFilePath)){
-						// 			// Insert image file name into database
-						// 			$insert = $db->query("INSERT into service (service_image,service_titre,service_text) VALUES ('.$service_image.','$service_titre','$service_text')");
-						// 			if($insert){
-						// 				$statusMsg = "The file ".$fileName. " has been uploaded successfully.";
-						// 			}else{
-						// 				$statusMsg = "File upload failed, please try again.";
-						// 			} 
-						// 		}else{
-						// 			$statusMsg = "Sorry, there was an error uploading your file.";
-						// 		}
-						// 	}else{
-						// 		$statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
-						// 	}
-						// }else{
-						// 	$statusMsg = 'Please select a file to upload.';
-						// }
-
-						// // Display status message
-						// echo $statusMsg;
-
-
-
-
-											
-							// Create database connection
-					$db = mysqli_connect("localhost", "root", "", "portfolio");
-
-					if ($db==true) {
-						echo "connection base de donner";
-					}
-					else {
-
-						echo "not connection base de donner";
-					}
-
-					// include "config.php";
-
-					// Initialize message variable
-					$msg = "";
-
-					// If upload button is clicked ...
-					if (isset($_POST['add'])) {
-						// Get image name
+				if (isset($_POST['save'])) {
+					// $name = $_POST['name'];
+					// $address = $_POST['address'];
 						$service_image = $_FILES['service_image']['name'];
-
-
 						// Get text
 						
 						$service_titre = $_POST['service_titre'];
@@ -270,35 +165,43 @@
 
 						$service_text = $_POST['service_text'];
 
+						mysqli_query($db, "INSERT INTO services (service_image, service_titre,service_text) VALUES ('$service_image', '$service_titre','$service_text')"); 
+							$_SESSION['message'] = "Address saved"; 
+							header('location:indexpage.php');
+							
+
+							if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
+								$msg = "Image uploaded successfully";
+							}else{
+								$msg = "Failed to upload image";
+							}
+				}
 
 
 
-						// image file directory
-						$target = "images/".basename($service_image);
+				 $results = mysqli_query($db, "SELECT * FROM services");
 
-						$sql = "INSERT INTO service (service_image,service_titre,service_text) VALUES ('".$service_image."','".$service_titre."','".$service_text."')";
-						// execute query
-						$result=mysqli_query($db, $sql);
-						if ($result==true) {
-							echo "data inserted";
-						}
-						else {
-							echo "data no inserted";
-						}
-
-
-						if (move_uploaded_file($_FILES['service_image']['tmp_name'], $target)) {
-							$msg = "Image uploaded successfully";
-						}else{
-							$msg = "Failed to upload image";
-						}
-					}
+				//   print_r($results);
+				//   print_r($results->fetch_assoc());
 
 
 
-					$result = mysqli_query($db, "SELECT * FROM service");
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 

@@ -49,7 +49,7 @@ include 'portfolioaction.php';
   
     	<p>Select Image File to Upload:</p>
     <input type="file" name="file">
-    <input type="submit" name="submit" value="Upload">
+    <input type="submit" name="save" value="Upload">
 
   </form>
 
