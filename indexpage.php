@@ -243,7 +243,7 @@ include "indexaction.php"
 			<input type="text" name="service_titre" placeholder="Your last title." >
 			</div>
 			<div>
-			<input type="text" name="service_text"placeholder="Your last text. ">
+			<textarea  name="service_text"  cols="20" rows="10" placeholder="Your last text."></textarea>
 			</div>
 			<div>
 				<button type="submit" name="save">upload</button>
@@ -251,11 +251,44 @@ include "indexaction.php"
 
  	</form>
 				</div>
+
+
+				
+				<table class="team_table">
+                                    <tr>
+                                        <th>id</th>
+                                        <th>image</th>
+                                        <th>titre</th>
+                                        <th>text</th>
+                                        
+                                        
+
+                                   
+                                    </tr>
+                                <tr>
+                                <?php 
+                                 $results = mysqli_query($db, "SELECT * FROM services");
+                                while ($row = mysqli_fetch_array($results)) { ?>
+
+                                <tr>    <td><?php echo $row['id']; ?></td> 
+                                        <td><?php echo $row['service_image']; ?></td> 
+                                        <td><?php echo $row['service_titre']; ?></td> 
+                                        <td><?php echo $row['service_text']; ?></td> 
+                                        
+                                        <td class="action-team">
+                                            <a href="indexpage.php?edit=<?php echo $row['id']; ?>" class="btn btn-edit">edit</a>
+                                            <a href="indexpage.php?dele=<?php echo $row['id']; ?>" class="btn btn-delete">delete</a>
+
+                                        </td>
+                                </tr>
+                                	<?php } ?>
+                                    
+                                  
+                                    </table>
 				
 			</div>
 		</div>
 	</div>
-
 
 
 

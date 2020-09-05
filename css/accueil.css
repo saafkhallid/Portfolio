@@ -344,7 +344,7 @@ ul li .active {
   padding-top: 20px;
 }
 
-.service .container .block0, .service .container .block1, .service .container .block2, .service .container .block3, .service .container .block4, .service .container .block5, .service .container .block6, .service .container .block7, .service .container .block8 {
+.service .container .block0 {
   height: 400px;
   width: 30%;
   padding-top: 50px;
@@ -354,13 +354,15 @@ ul li .active {
   cursor: pointer;
 }
 
-.service .container .block0 img, .service .container .block1 img, .service .container .block2 img, .service .container .block3 img, .service .container .block4 img, .service .container .block5 img, .service .container .block6 img, .service .container .block7 img, .service .container .block8 img {
+.service .container .block0 .image_portfolio {
+  width: 100px;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.service .container .block0 h2, .service .container .block1 h2, .service .container .block2 h2, .service .container .block3 h2, .service .container .block4 h2, .service .container .block5 h2, .service .container .block6 h2, .service .container .block7 h2, .service .container .block8 h2 {
+.service .container .block0 h2 {
   text-align: center;
 }
 

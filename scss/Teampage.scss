@@ -181,6 +181,22 @@ table{
     padding: 5px 10px;
   }
 
+  .btn {
+	color:black;
+	// border:1px solid black;
+	height: 35px;
+	width: 70px;
+	text-align: center;
+	margin: 3px;
+	border-radius: 3px;
+}
+.btn-edit{
+	background-color: chartreuse;
+}
+.btn-delete{
+	background-color: rgb(216, 85, 25)
+}
+
 @media only screen and (max-width: 420px){
 	header {
 		display: block;

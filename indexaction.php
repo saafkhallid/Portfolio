@@ -164,7 +164,7 @@
 
 
 						$service_text = $_POST['service_text'];
-
+						$target = "images/".basename($service_image);
 						mysqli_query($db, "INSERT INTO services (service_image, service_titre,service_text) VALUES ('$service_image', '$service_titre','$service_text')"); 
 							$_SESSION['message'] = "Address saved"; 
 							header('location:indexpage.php');
@@ -186,6 +186,15 @@
 
 
 
+
+
+				
+  if (isset($_GET['dele'])) {
+    $id = $_GET['dele'];
+    mysqli_query($db, "DELETE FROM services WHERE id=$id");
+    $_SESSION['message'] = "Address deleted!"; 
+    header('location:indexpage.php');
+  }
 
 
 
