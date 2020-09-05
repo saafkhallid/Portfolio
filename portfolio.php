@@ -53,9 +53,9 @@ include 'portfolioaction.php';
 
             <!-- <div class="block">  <img src="Assets\gallery_img-01.jpg"  ></div> -->
 
-                     <div class="block">  <?php
+                     <div class="block"> <?php
                     // Include the database configuration file
-                    include 'dbConfig.php';
+                    // include 'connexion.php';
 
                     // Get images from the database
                     $query = $db->query("SELECT * FROM images ORDER BY uploaded_on DESC");

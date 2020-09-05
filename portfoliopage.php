@@ -48,7 +48,7 @@ include 'portfolioaction.php';
 <form method="POST" action="portfoliopage.php" enctype="multipart/form-data">
   
     	<p>Select Image File to Upload:</p>
-    <input type="file" name="file">
+    <input type="file" name="file_portfolio">
     <input type="submit" name="save" value="Upload">
 
   </form>

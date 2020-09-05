@@ -324,66 +324,20 @@ ul li .active {
 }
 
 .service .container {
+  height: auto;
   padding-top: 50px;
-  width: 80%;
+  width: 90%;
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
-}
-
-.service .container .block0 {
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-
-.service .container .block1 {
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-
-.service .container .block2 {
-  grid-row: 1/2;
-  grid-column: 3/4;
-}
-
-.service .container .block3 {
-  grid-row: 2/3;
-  grid-column: 1/2;
-}
-
-.service .container .block4 {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
-.service .container .block5 {
-  grid-row: 2/3;
-  grid-column: 3/4;
-}
-
-.service .container .block6 {
-  grid-row: 3/4;
-  grid-column: 1/2;
-}
-
-.service .container .block7 {
-  grid-row: 3/4;
-  grid-column: 2/3;
-}
-
-.service .container .block8 {
-  grid-row: 3/4;
-  grid-column: 3/4;
 }
 
 .service .container .container-p {
   width: 90%;
-  margin-left: 10px;
-  text-align: justify;
+  margin-left: 5px;
+  text-align: center;
 }
 
 .service .container .container-h {
@@ -392,7 +346,7 @@ ul li .active {
 
 .service .container .block0, .service .container .block1, .service .container .block2, .service .container .block3, .service .container .block4, .service .container .block5, .service .container .block6, .service .container .block7, .service .container .block8 {
   height: 400px;
-  width: 100%;
+  width: 30%;
   padding-top: 50px;
   background: rgba(238, 233, 233, 0.801);
   border-radius: 3px;
@@ -430,8 +384,14 @@ ul li .active {
   }
   body .service .container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+  }
+  body .service .container .block0, body .service .container .block1, body .service .container .block2, body .service .container .block3, body .service .container .block4, body .service .container .block5, body .service .container .block6, body .service .container .block7, body .service .container .block8 {
+    height: 400px;
+    width: 100%;
+    padding-top: 50px;
+    background: rgba(238, 233, 233, 0.801);
+    border-radius: 3px;
+    box-shadow: 5px 10px #888888;
   }
   body .service .container .container-p {
     padding-top: 20px;
@@ -448,22 +408,6 @@ ul li .active {
   body .sectionTeam .title {
     top: 30%;
     font-size: 15px;
-  }
-  body .service .container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  body .service .container .block0, body .service .container .block1, body .service .container .block2, body .service .container .block3, body .service .container .block4, body .service .container .block5, body .service .container .block6, body .service .container .block7, body .service .container .block8 {
-    height: 500px;
-  }
-  body .service .container .container-p {
-    padding-top: 20px;
-    font-size: 16px;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
   }
 }
 

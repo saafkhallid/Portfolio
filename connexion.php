@@ -1,14 +1,20 @@
 
 <?php
 
-$host="localhost";
-$user="root";
-$pwd="";
-$nbr="Portfolio";
 
+// Database configuration
+$dbHost     = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName     = "portfolio";
 
+// Create database connection
+$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
-$con=mysqli_connect($host,$user,$pwd,$nbr);
+// Check connection
+if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
+}
 
 
 

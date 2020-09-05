@@ -41,8 +41,8 @@
     <section class="sectionTeam">
         
         <img class="  sectionTeam-photo" src="Assets/coffee-2737047_1920.png">
-        <div><h1 class="title">  I'm web developer<br>
-            Khalid saaf   </h1></div>
+        <div><h1 class="title" id="text"> 
+            </h1></div>
 
 
     </section>
@@ -50,62 +50,62 @@
     <section class=" service ">
         <h1>Our service</h1>
         <div class="container">
-        <?php while ($row = mysqli_fetch_array($results)) { ?>
-            <div class="block0">
-                <img src="images/<?= $row['service_image'];?>" alt="">
-                <h2 class="container-h"><?php echo $row['service_titre']; ?></h2>
-                <p class="container-p "><?php echo $row['service_text']; ?></p>
-            </div> 
-        <?php } ?>
+       
      
-
-
-
-            
-            <!-- <div class="block1">
+        <div class="block0">
                 <img src="   Assets/phone (1).png" alt="">
                 <h2  class="container-h">Support</h2>
 
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div> -->
+        </div> 
+            
+            <div class="block1">
+                <img src="   Assets/phone (1).png" alt="">
+                <h2  class="container-h">Support</h2>
 
-
-
-<!--             
+                <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
+            </div> 
+          
             <div class="block2">
                 <img src="   Assets/rocket.png" alt="">
 
                 <h2 class="container-h">  Responsive Design</h2>
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div><div class="block3">
+            </div>
+            <div class="block3">
                 <img src="   Assets/google-docs.png" alt="">
                 <h2 class="container-h">  Creative Design</h2>
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div><div class="block4">
+            </div
+            ><div class="block4">
                 <img src="  Assets/repair (1).png" alt="">
                 <h2 class="container-h">  Graphic Design</h2>
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div><div class="block5">
+            </div>
+            <div class="block5">
                 <img src="  Assets/idea (1).png" alt="">
                 <h2 class="container-h">Web Idea</h2>
 
                 <p  class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div><div class="block6">
+            </div>
+            <div class="block6">
                 <img src="  Assets/email.png" alt="">
                 <h2 class="container-h">Support</h2>
 
                 <p class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div><div class="block7">
+            </div>
+            <div class="block7">
                 <img src="  Assets/checklist.png" alt="">
                 <h2 class="container-h">Web Idea</h2>
 
                 <p class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div><div class="block8">
+            </div>
+            <div class="block8">
                 <img src="  Assets/google-docs.png " alt="">
                 <h2 class="container-h">  Graphic Design</h2>
 
                 <p class="container-p " >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident, a minima eaque delectus iure beatae laudantium velit odio exercitationem nam quidem odit animi eos minus dolorem molestias ipsum maiores!</p>
-            </div>  -->
+            </div> 
            
             
 

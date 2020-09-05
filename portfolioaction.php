@@ -3,7 +3,7 @@
 
 
 						// Include the database configuration file
-						include 'dbConfig.php';
+						include 'connexion.php';
 
 						$statusMsg = '';
 
@@ -12,19 +12,19 @@
 
 						// $fileName = basename($_FILES['file']['name']);
 
-						$fileName = basename($_FILES["file"]["name"]);
+						$fileName = basename($_FILES["file_portfolio"]["name"]);
 						
 						$targetFilePath = $targetDir . $fileName;
 						$fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
 
-						if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
+						if(isset($_POST["save"]) && !empty($_FILES["file_portfolio"]["name"])){
 
 							
 							// Allow certain file formats
 							$allowTypes = array('jpg','png','jpeg','gif','pdf');
 							if(in_array($fileType, $allowTypes)){
 								// Upload file to server
-								if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
+								if(move_uploaded_file($_FILES["file_portfolio"]["tmp_name"], $targetFilePath)){
 									// Insert image file name into database
 									$insert = $db->query("INSERT into images (file_name, uploaded_on) VALUES ('".$fileName."', NOW())");
 									if($insert){
@@ -38,7 +38,8 @@
 							}else{
 								$statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
 							}
-						}else{
+						}
+						else{
 							$statusMsg = 'Please select a file to upload.';
 						}
 
