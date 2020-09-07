@@ -45,13 +45,22 @@ include 'portfolioaction.php';
 			<h1> Welcome page portfolio</h1>
 			
       <div class="">
-<form method="POST" action="portfoliopage.php" enctype="multipart/form-data">
+<form method="POST" action="portfolioaction.php" enctype="multipart/form-data">
   
-    	<p>Select Image File to Upload:</p>
-    <input type="file" name="file_portfolio">
-    <input type="submit" name="save" value="Upload">
-
-  </form>
+		<p>Select Image File to Upload:</p>
+	<div>	
+	<input type="hidden" name="id">
+	</div>
+	<div>
+	<input type="file" name="image">
+	</div>
+	<div>
+	<input type="text" name="path">
+	</div>
+	<div>
+	<button type="submit" name="save">Télecharger</button>
+	</div>
+</form>
 
 
 

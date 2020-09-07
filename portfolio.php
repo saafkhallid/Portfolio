@@ -51,20 +51,15 @@
 
 
 
-                   
-
-                    
-
-
-                    
-
-                  
-
+        
                    
 
                  
+             <div class="block"> 
+                 <a href="https://www.google.com/" target="_blank" >  <img src="Assets\gallery_img-02.jpg"     > </a>
+                 
+                </div>
              <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
-            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
 
             <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
             <div class="block"> <img src="Assets\gallery_img-04.jpg "  ></div>
@@ -75,6 +70,10 @@
             <div class="block"> <img src="Assets\gallery_img-05.jpg "  ></div>
             <div class="block"> <img src="Assets\gallery_img-03.jpg" ></div>
             <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+
+
  
 
 

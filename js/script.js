@@ -26,7 +26,7 @@ const navSlide = () => {
 
 
 var i=0,text;
-  text = "  I'm web developer Khalid saaf <br>"
+  text = "  I'm web developer Khalid saaf "
 
   function typing() {
     if(i<text.length){
