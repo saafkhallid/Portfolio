@@ -1,6 +1,6 @@
 
 <?php
-include 'portfolioaction.php';
+// include 'portfolioaction.php';
 
 ?>
 
@@ -49,30 +49,7 @@ include 'portfolioaction.php';
         <div class="portfolio">
 
 
-             <!-- <div class="block"> </div> -->
 
-            <!-- <div class="block">  <img src="Assets\gallery_img-01.jpg"  ></div> -->
-
-                     <div class="block"> <?php
-                    // Include the database configuration file
-                    // include 'connexion.php';
-
-                    // Get images from the database
-                    $query = $db->query("SELECT * FROM images ORDER BY uploaded_on DESC");
-
-                    if($query->num_rows > 0){
-                        while($row = $query->fetch_assoc()){
-                            $imageURL = 'images/'.$row["file_name"];
-                    ?>
-                        <img src="<?php echo $imageURL; ?>" alt="" />
-                    <?php }
-                    }else{ ?>
-                       <p>"No image(s) found..."</p>"
-                    <?php 
-                    } 
-                     ?> 
-                    
-                    </div>
 
                    
 
@@ -85,8 +62,8 @@ include 'portfolioaction.php';
 
                    
 
-                   
-            <!-- <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+                 
+             <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
             <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
 
             <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
@@ -96,7 +73,9 @@ include 'portfolioaction.php';
                 ></div>
             <div class="block"> <img src="Assets\gallery_img-03.jpg"  ></div>
             <div class="block"> <img src="Assets\gallery_img-05.jpg "  ></div>
-            <div class="block"> <img src="Assets\gallery_img-03.jpg" ></div> -->
+            <div class="block"> <img src="Assets\gallery_img-03.jpg" ></div>
+            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+ 
 
 
 

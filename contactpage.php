@@ -28,14 +28,6 @@
 		<div class="sidebar">
 			<nav>
 				<a href="#" class="">Administration<span>page</span></a>
-				
-					<!-- <li class="active" ><a href="#">Dashboard</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">contact</a></li>
-					<li><a href="#">accuil</a></li>
-					<li class="" ><a href="loginpage.php ">login</a></li> -->
-
-
                     <ul>
 					<li class="active" ><a href="#">Dashboard</a></li>
 					<li><a href="portfoliopage.php">Portfolio</a></li>
@@ -52,7 +44,7 @@
 			
       <div class="">
 				
-								<!--code-->
+								
 
 				</div>
 				

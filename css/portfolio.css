@@ -328,7 +328,7 @@ ul li .active {
 .portfolio-team .portfolio {
   padding-bottom: 10px;
   padding-top: 60px;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -336,32 +336,18 @@ ul li .active {
 }
 
 .portfolio-team .portfolio .block {
+  height: auto;
+  width: 30%;
   padding: 0px;
   margin: 0px;
-}
-
-.portfolio-team .portfolio img {
-  width: 300px;
-  height: auto;
-  cursor: pointer;
   border-radius: 5px;
   border: 1px solid black;
 }
 
-@media only screen and (max-width: 1440px) {
-  body {
-    width: 100%;
-  }
-  body .portfolio-team {
-    width: 100%;
-  }
-  body .portfolio-team .portfolio {
-    width: 100%;
-  }
-  body .portfolio-team .portfolio .img {
-    width: 420px;
-    height: auto;
-  }
+.portfolio-team .portfolio .block img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1280px) {
