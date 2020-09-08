@@ -1,6 +1,6 @@
   <?php while ($row = mysqli_fetch_array($results)) { ?>
             <div class="block0">
-                <img src="images/<?= $row['service_image'];?>" alt="">
+                <img src= " images/<?= $row['service_image'];?> " alt="">
                 <h2 class="container-h"><?php echo $row['service_titre']; ?></h2>
                 <p class="container-p "><?php echo $row['service_text']; ?></p>
             </div> 

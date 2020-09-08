@@ -43,7 +43,7 @@
 										}
 							}
 							$results = mysqli_query($dbn, "SELECT * FROM images");
-											  print_r($results->fetch_assoc());
+											//   print_r($results->fetch_assoc());
 
 
 			

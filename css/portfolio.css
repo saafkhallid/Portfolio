@@ -364,12 +364,12 @@ ul li .active {
     width: 100%;
   }
   body .portfolio-team .portfolio {
-    width: 80%;
+    width: 50%;
     flex-direction: row;
     flex-wrap: wrap;
   }
   body .portfolio-team .portfolio .block {
-    width: 40;
+    width: 40%;
   }
 }
 
@@ -389,11 +389,18 @@ ul li .active {
     width: 100%;
   }
   body .portfolio-team .portfolio {
-    width: 60%;
+    width: 50%;
+    background-color: blue;
     flex-direction: column;
   }
   body .portfolio-team .portfolio .block {
     width: 100%;
+    height: 100%;
+  }
+  body .portfolio-team .portfolio .block img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
   }
 }
 

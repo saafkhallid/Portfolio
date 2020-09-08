@@ -1,6 +1,6 @@
 
 <?php
-// include 'portfolioaction.php';
+include 'portfolioaction.php';
 
 ?>
 
@@ -54,14 +54,14 @@
         
                    
 
-                 
+        <?php while ($row = mysqli_fetch_array($results)) { ?>  
              <div class="block"> 
-                 <a href="https://www.google.com/" target="_blank" >  <img src="Assets\gallery_img-02.jpg"     > </a>
+                 <a href="<?php echo $row['path'];?>" target="_blank" ><img src="images/<?= $row['image'];?>" > </a>
                  
                 </div>
-             <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+                <?php } ?>
 
-            <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
+            <!-- <div class="block"> <img src="Assets\gallery_img-03.jpg"   ></div>
             <div class="block"> <img src="Assets\gallery_img-04.jpg "  ></div>
             <div class="block"> <img src="Assets\gallery_img-05.jpg" ></div>
             <div class="block"><img src="Assets\gallery_img-06.jpg" 
@@ -71,7 +71,7 @@
             <div class="block"> <img src="Assets\gallery_img-03.jpg" ></div>
             <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
             <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
-            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div>
+            <div class="block"> <img src="Assets\gallery_img-02.jpg"     ></div> -->
 
 
  
