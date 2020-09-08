@@ -331,6 +331,7 @@ ul li .active {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+  height: auto;
   justify-content: center;
   margin: 0 auto;
 }
@@ -339,14 +340,14 @@ ul li .active {
   height: auto;
   width: 30%;
   margin: 5px;
-  border-radius: 5px;
-  border: 1px solid black;
 }
 
 .portfolio-team .portfolio .block img {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #e9e6e6;
 }
 
 @media only screen and (max-width: 768px) {
@@ -390,16 +391,18 @@ ul li .active {
   }
   body .portfolio-team .portfolio {
     width: 50%;
-    background-color: blue;
     flex-direction: column;
   }
   body .portfolio-team .portfolio .block {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border: none;
   }
   body .portfolio-team .portfolio .block img {
+    border-radius: 10px;
+    border: 1px solid #e9e6e6;
     width: 100%;
-    height: 100%;
+    height: auto;
     cursor: pointer;
   }
 }
