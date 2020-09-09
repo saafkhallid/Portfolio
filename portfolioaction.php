@@ -32,7 +32,7 @@
 										echo "donner non upload";
 									}	
 									$_SESSION['message'] = "Address saved"; 
-										// header('location:portfoliopage.php');
+										header('location:portfoliopage.php');
 										
 			
 										if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
@@ -47,7 +47,12 @@
 
 
 			
-
+											if (isset($_GET['dele'])) {
+												$id = $_GET['dele'];
+												mysqli_query($dbn, "DELETE FROM images WHERE id=$id");
+												$_SESSION['message'] = "Address deleted!"; 
+												header('location:portfoliopage.php');
+											  }
 
 
 

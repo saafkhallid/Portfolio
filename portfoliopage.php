@@ -60,7 +60,37 @@ include 'portfolioaction.php';
 	<div>
 	<button type="submit" name="save">Télecharger</button>
 	</div>
-</form>
+	</form>
+
+			<table class="team_table">
+                                    <tr>
+                                        <th>id</th>
+                                        <th>image</th>
+                                        <th>path</th>
+                                        
+                                        
+
+                                   
+                                    </tr>
+                                <tr>
+                                <?php 
+                                 $results = mysqli_query($dbn, "SELECT * FROM images");
+                                while ($row = mysqli_fetch_array($results)) { ?>
+
+                                <tr>    <td><?php echo $row['id']; ?></td> 
+                                        <td><?php echo $row['image']; ?></td> 
+                                        <td><?php echo $row['path']; ?></td> 
+                                        
+                                        <td class="action-team">
+                                            <a href="portfoliopage.php?edit=<?php echo $row['id']; ?>" class="btn btn-edit">edit</a>
+                                            <a href="portfolioaction.php?dele=<?php echo $row['id']; ?>" class="btn btn-delete">delete</a>
+
+                                        </td>
+                                </tr>
+                                	<?php } ?>
+                                    
+                                  
+                                    </table>
 
 
 
