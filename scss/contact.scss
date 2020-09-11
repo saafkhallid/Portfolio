@@ -37,14 +37,15 @@ input[type=text],input[type= email], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #dbdb12;
+    background-color: #e9d30e;
     color: white;
     padding: 10px 25px;
-    width: 150px;
+    width:50%;
+    margin: 0 auto;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    display: block;
     cursor: pointer;
-    // margin-left: 50%;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -53,27 +54,51 @@ input[type=text],input[type= email], select, textarea {
   }
   
   /* Add a background color and some padding around the form */
+  .contact-us {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
 
   
-  .container {
+  .container-contact {
     width: 50%;
-    border-radius: 5px;
-    background-color: black;
-    // margin-top: 10%;
-
-
-        // background-color: #c44848;
-
+    border-radius: 20px;
+    background-color: rgba(238, 228, 228, 0.473);
     display: block;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 20px;
-    // .container-label{
-    //   color: white;
-    // }
+         
+  }
+  .item-contact{
+    
+    display:flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    // padding-left: 5%;
+    // margin-left: 20%;
+    // justify-content:space-evenly
+
+
+    
+
+  }
+  .container-information{
+    // background-color: red;
+    width: 30%;
+    // justify-content:space-between;
+
+  }
+  .item-contact__mod{
+    display: block;
+    margin-left: 10%;
   }
   .contact {
-        padding-top: 10px;
-       height: 900px;
+        padding-bottom: 100px;
+       height: auto;
        .alert{
          text-align: center;
          font-size: 30px;
@@ -97,6 +122,7 @@ input[type=text],input[type= email], select, textarea {
            height: 100px;
            display:block;
         .contat--titre{
+          font-family: 'Signika', sans-serif;
             text-align: center;
             padding-top: 20px;
             font-size: 30px;
@@ -108,7 +134,9 @@ input[type=text],input[type= email], select, textarea {
   }
 
   .container-label{
-    color: white;
+    color: rgb(197, 143, 143);
+    // width: 25%;
+    // margin: 0 auto;
   }
 
 
@@ -122,3 +150,7 @@ input[type=text],input[type= email], select, textarea {
       }
     }
   }
+
+
+
+  

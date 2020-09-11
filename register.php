@@ -132,10 +132,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     </section>
 
-    <div class="container">
+    <div class="container-register">
         <h2>Sign Up</h2>
-        <!-- <p>Please fill this form to create an account.</p> -->
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form class="container-register__form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <p>Please fill this form to create an account.</p>
 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -153,7 +152,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
-            <div class="form-group">
+            <div class="form-group button-registre">
                 <input type="submit" class="btn1 btn-primary" value="Submit">
                 <input type="reset" class="btn1 btn-default" value="Reset">
             </div>

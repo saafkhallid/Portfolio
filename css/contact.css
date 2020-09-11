@@ -333,12 +333,14 @@ input[type=text], input[type=email], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #dbdb12;
+  background-color: #e9d30e;
   color: white;
   padding: 10px 25px;
-  width: 150px;
+  width: 50%;
+  margin: 0 auto;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  display: block;
   cursor: pointer;
 }
 
@@ -348,18 +350,41 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
-  width: 50%;
-  border-radius: 5px;
-  background-color: black;
-  display: block;
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
+}
+
+.container-contact {
+  width: 50%;
+  border-radius: 20px;
+  background-color: rgba(238, 228, 228, 0.473);
+  display: block;
   padding: 20px;
 }
 
+.item-contact {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+}
+
+.container-information {
+  width: 30%;
+}
+
+.item-contact__mod {
+  display: block;
+  margin-left: 10%;
+}
+
 .contact {
-  padding-top: 10px;
-  height: 900px;
+  padding-bottom: 100px;
+  height: auto;
 }
 
 .contact .alert {
@@ -389,6 +414,7 @@ input[type=submit]:hover {
 }
 
 .contact .block0 .contat--titre {
+  font-family: 'Signika', sans-serif;
   text-align: center;
   padding-top: 20px;
   font-size: 30px;
@@ -396,7 +422,7 @@ input[type=submit]:hover {
 }
 
 .container-label {
-  color: white;
+  color: #c58f8f;
 }
 
 @media only screen and (max-width: 768px) {

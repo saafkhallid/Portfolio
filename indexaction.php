@@ -4,16 +4,16 @@
 			session_start();
 				$db = mysqli_connect('localhost', 'root', '', 'portfolio');
 
-				// initialize variables
-				$service_text="";
+				$service_image="";
 				$service_titre="";
 				$service_text="";
 				$id = 0;
 				$update = false;
+				$msg="";
 
 				if (isset($_POST['save'])) {
-					// $name = $_POST['name'];
-					// $address = $_POST['address'];
+
+						
 						$service_image = $_FILES['service_image']['name'];
 						// Get text
 						
@@ -52,6 +52,31 @@
     $_SESSION['message'] = "Address deleted!"; 
     header('location:indexpage.php');
   }
+ 
+
+
+
+
+  
+  if (isset($_GET['edit'])) {
+	$id = $_GET['edit'];
+	$update = true;
+	$record = mysqli_query($db, "SELECT * FROM services WHERE id=$id");
+
+	  if (count($record) == 1) {
+		// $n = mysqli_fetch_array($record);
+		$row=$record->fetch_array();
+		$service_image = $n['service_image']; 
+		$service_titre = $n['service_titre'];
+
+		$service_text = $n['service_text'];
+		
+		header("location:indexpage.php");
+
+
+		
+	  }
+}
 
 
 

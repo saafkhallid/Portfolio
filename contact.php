@@ -7,7 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css?v=<?php.echo.time();.?> ">
 
     <title>contact</title>
 </head>
@@ -65,12 +66,8 @@
                                 }
                         
                         ?>
-        <div class="container">
-
-       
-
-
-
+        <div class="contact-us">
+            <div class="container-contact">
             <form method="POST" action="PROCESS.PHP"  >
           
               <label class="container-label"for="fname">username:</label>
@@ -85,9 +82,33 @@
               <label class="container-label"for="subject">Message</label>
               <textarea id="subject" name="Message" placeholder="Write something.." style="height:200px"></textarea>
           
-              <input type="submit"  name="add" value="Submit" >
+              <input type="submit" class="contact-button" name="add" value="button" >
           
             </form>
+            </div>
+
+            <div class="container-information">
+            <div class="item-contact">
+                <div class="item-contact__mod"><img src="https://img.icons8.com/fluent-systems-filled/48/000000/user-location.png"/></div> 
+                <div class="item-contact__mod"><p><span>saaf web developper </span><br><span> Maroc,Youssoufia</span></p></div>
+            </div>
+
+            
+            <div class="item-contact">              
+                <div class="item-contact__mod"><img src="https://img.icons8.com/fluent-systems-filled/48/000000/phone.png"/></div>
+                <div class="item-contact__mod"><p>(+212)6-90-45-62-12</p></div>
+            </div>
+            
+            
+            <div class="item-contact">
+                <div class="item-contact__mod"><img src="https://img.icons8.com/ios-filled/50/000000/new-message.png"/></div>
+                <div class="item-contact__mod"><p>khaliid.saaf@gmail.com</p></div>
+            </div>
+
+
+            </div>
+
+
           </div> 
 
     </section>

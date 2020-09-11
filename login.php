@@ -149,7 +149,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <section class="saaf">   
       <div class="container" >
         <h2 class="">Login</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form class="container-forum" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <p>Please fill in your credentials to login.</p>
 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">

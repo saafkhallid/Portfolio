@@ -6,7 +6,7 @@
 
 
 
-							// session_start();
+							session_start();
 							$dbn = mysqli_connect('localhost', 'root', '', 'portfolio');
 			
 							// initialize variables

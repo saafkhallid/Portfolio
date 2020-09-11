@@ -43,18 +43,30 @@ include "indexaction.php"
 
 		<div class="main-content">
 			<h1> Welcome page   accuil</h1>
+		
+                             <?php if (isset($_SESSION['message'])): ?>
+                                <div class="msg">
+                                    <?php 
+                                        echo $_SESSION['message']; 
+                                        unset($_SESSION['message']);
+                                    ?>
+                                </div>
+                            <?php endif ?>
 			
       <div class="">
 				
 	  <form method="POST" action="indexpage.php" enctype="multipart/form-data">
+	  <div>
+    	<input type="hidden" name="id" value="<?php echo $id; ?>"  >
+        </div>
 			<div>
-			<input type="file" name="service_image">
+			<input type="file" name="service_image" value="<?php echo $service_image; ?> ">
 			</div>
 			<div>
-			<input type="text" name="service_titre" placeholder="Your last title." >
+			<input type="text" name="service_titre" placeholder="Your last title." value="<?php echo $service_titre; ?> ">
 			</div>
 			<div>
-			<textarea  name="service_text"  cols="20" rows="10" placeholder="Your last text."></textarea>
+			<textarea  name="service_text"  cols="20" rows="10" placeholder="Your last text." value="<?php echo $service_text; ?>"></textarea>
 			</div>
 			<div>
 				<button type="submit" name="save">upload</button>

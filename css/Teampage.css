@@ -164,6 +164,11 @@ header .logo span {
   box-shadow: 0px 1px 5px #777;
 }
 
+.msg {
+  text-align: center;
+  color: #e74a4a;
+}
+
 .main-content .panel-wrapper .panel-head {
   background-color: #00A5F2;
   color: #fff;
