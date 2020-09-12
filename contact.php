@@ -82,7 +82,7 @@
               <label class="container-label"for="subject">Message</label>
               <textarea id="subject" name="Message" placeholder="Write something.." style="height:200px"></textarea>
           
-              <input type="submit" class="contact-button" name="add" value="button" >
+              <input type="submit" class="contact-button" name="add" value="Envoyer" >
           
             </form>
             </div>
@@ -93,7 +93,7 @@
                 <div class="item-contact__mod"><p><span>saaf web developper </span><br><span> Maroc,Youssoufia</span></p></div>
             </div>
 
-            
+
             <div class="item-contact">              
                 <div class="item-contact__mod"><img src="https://img.icons8.com/fluent-systems-filled/48/000000/phone.png"/></div>
                 <div class="item-contact__mod"><p>(+212)6-90-45-62-12</p></div>
