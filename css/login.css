@@ -7,6 +7,7 @@
 }
 
 body {
+  width: 100%;
   overflow-x: hidden;
   font-family: nunito, sans-serif;
 }
@@ -337,6 +338,7 @@ ul li .active {
 
 .saaf {
   height: 80vh;
+  margin: 0 auto;
 }
 
 .container-register {
@@ -392,6 +394,7 @@ ul li .active {
 }
 
 .container .container-forum {
+  margin: 0 auto;
   width: 100%;
   padding: 40px;
   box-shadow: 0 16px 20px rgba(0, 0, 0, 0.048);
@@ -476,8 +479,39 @@ ul li .active {
 }
 
 @media only screen and (max-width: 1400px) {
+  .saaf {
+    height: 80vh;
+  }
+  .saaf .container {
+    height: 100vh;
+    margin: 0 auto;
+  }
+  .saaf .container .container-forum {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   body {
     width: 100%;
+  }
+  body .saaf {
+    height: 60vh;
+  }
+  body .saaf .container .container-forum {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+  body .saaf {
+    height: 60vh;
+  }
+  body .saaf .container .container-forum {
+    width: 90%;
   }
 }
 
