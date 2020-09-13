@@ -394,7 +394,7 @@ ul li .active {
 .container .container-forum {
   width: 100%;
   padding: 40px;
-  background-color: rgba(238, 228, 228, 0.473);
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.048);
   border-radius: 4px;
 }
 
@@ -410,6 +410,16 @@ ul li .active {
   border: 1px solid silver;
   margin: 10px 0 18px 0;
   padding: 0 10px;
+}
+
+.container-register__form-info {
+  padding-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.form-group__user {
+  color: #c58f8f;
 }
 
 .btn {
@@ -434,6 +444,11 @@ ul li .active {
 
 .forgot {
   margin-top: 50px;
+}
+
+.forg {
+  padding-top: 14px;
+  color: #0f0a0a;
 }
 
 .forgot-ligne {

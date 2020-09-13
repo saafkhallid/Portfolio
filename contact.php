@@ -90,7 +90,7 @@
             <div class="container-information">
             <div class="item-contact">
                 <div class="item-contact__mod"><img src="https://img.icons8.com/fluent-systems-filled/48/000000/user-location.png"/></div> 
-                <div class="item-contact__mod"><p><span>saaf web developper </span><br><span> Maroc,Youssoufia</span></p></div>
+                <div class="item-contact__mod"><p><span>saaf web developper </span><br><span class="item-contact__mod--local"> Maroc,Youssoufia</span></p></div>
             </div>
 
 

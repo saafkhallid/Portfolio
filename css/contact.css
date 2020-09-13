@@ -351,8 +351,10 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .contact-us {
+  height: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
@@ -380,6 +382,11 @@ input[type=submit]:hover {
 .item-contact__mod {
   display: block;
   margin-left: 10%;
+  font-weight: bold;
+}
+
+.item-contact__mod .item-contact__mod--local {
+  color: #c58f8f;
 }
 
 .contact {
@@ -426,8 +433,30 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  body .contact .container {
+  body .contact .contact-us {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .contact .contact-us .container-contact {
+    width: 60%;
+  }
+  body .contact .contact-us .container-information {
+    width: 60%;
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body .contact .contact-us {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .contact .contact-us .container-contact {
     width: 90%;
+  }
+  body .contact .contact-us .container-information {
+    width: 90%;
+    margin-top: 20%;
   }
 }
 

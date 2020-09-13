@@ -1,6 +1,6 @@
 <?php  
  include "indexaction.php";
-//   $results = mysqli_query($db, "SELECT * FROM info"); 
+//   $results = mysqli_query($db, "SELECT * FROM services"); 
 
 // //  print_r($results->fetch_assoc());
 
@@ -56,7 +56,7 @@
                 <img src="images/<?= $row['service_image'];?>" alt="" class="image_portfolio">
                 <h2  class="container-h"><?php echo $row['service_titre']; ?></h2>
 
-                <p  class="container-p"><?php echo $row['service_text']; ?> </p>
+                <p  class="container-p"> <?php echo $row['service_text']; ?> </p>
         </div> 
         <?php } ?>
 

@@ -109,9 +109,11 @@ body {
         width: 100%;
         // height: 100%;
         padding: 40px;
+        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.048);
+
         // padding-top: 100px;
         // background-color: rgba(206, 29, 29, 0.918);
-        background-color: rgba(238, 228, 228, 0.473);
+        // background-color: rgba(238, 228, 228, 0.473);
 
 
         border-radius: 4px;
@@ -131,6 +133,16 @@ body {
          padding: 0 10px;
         
      }
+
+}
+.container-register__form-info{
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-group__user{
+    color: rgb(197, 143, 143);
 
 }
 
@@ -155,7 +167,11 @@ body {
 
      .forgot{
          margin-top:50px;
-     }    
+     }  
+     .forg{
+         padding-top: 14px;
+         color: rgb(15, 10, 10);
+     }  
      .forgot-ligne {
          color: rgba(214, 25, 25, 0.473);
          text-decoration: none;

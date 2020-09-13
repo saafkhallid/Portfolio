@@ -55,8 +55,10 @@ input[type=text],input[type= email], select, textarea {
   
   /* Add a background color and some padding around the form */
   .contact-us {
+    height: auto;
     display: flex;
     flex-direction:row;
+    flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
     margin: 0 auto;
@@ -91,6 +93,11 @@ input[type=text],input[type= email], select, textarea {
   .item-contact__mod{
     display: block;
     margin-left: 10%;
+    font-weight: bold;
+    .item-contact__mod--local{
+      color:   rgb(197, 143, 143);
+      ;
+    }
   }
   .contact {
         padding-bottom: 100px;
@@ -140,13 +147,45 @@ input[type=text],input[type= email], select, textarea {
   @media only screen and (max-width:768px) {
     body {
       .contact {
-        .container{
-          width: 90%;
+        .contact-us{
+          width: 100%;
+          flex-direction: column;
+          
+
+          .container-contact{
+            width: 60%;
+          }
+          .container-information{
+            width: 60%;
+            margin-top: 20%;
+
+          }
         }
       }
     }
   }
 
+
+  @media only screen and (max-width:375px) {
+    body {
+      .contact {
+        .contact-us{
+          width: 100%;
+          flex-direction: column;
+          
+
+          .container-contact{
+            width: 90%;
+          }
+          .container-information{
+            width: 90%;
+            margin-top: 20%;
+
+          }
+        }
+      }
+    }
+  }
 
 
   
