@@ -75,16 +75,52 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Reset Password</title>
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="css/login.css?v=<?php.echo.time();.?> ">
+
+    
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Reset Password</h2>
-        <p>Please fill out this form to reset your password.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
+    
+<nav>
+        <div class="logo">
+            <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
+        </div>
+        </div>
+        <ul class="navMenu">
+            <li><a class="active" href="index.php">Acceuil</a></li>
+            <li><a href="Apropo.php">À propos </a></li>
+            <li class="active" id="act"><a href="portfolio.php">portfolio</a>
+                
+            </li>
+
+            <li class="active"><a href="contact.php">Contact</a></li>
+            <li class="active"><a href="login.php">login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="burger__line1"></div>
+            <div class="burger__line2"></div>
+            <div class="burger__line3"></div>
+        </div>
+    </nav>
+
+    <section class="sectionlogin">
+        
+        <img class="  sectionlogin-photo" src="/PORTFOLIO/Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
+       
+    
+    
+    </section>
+
+
+
+
+
+    <section  class="saaf">
+    <div class="container">
+         <h2> Reset Password</h2>
+
+        <form class="container-forum"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
+        <p  class=" container-register__form-info" >Please fill out this form to reset your password.</p>
             <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
                 <label>New Password</label>
                 <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
@@ -97,9 +133,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link" href="welcome.php">Cancel</a>
+                <a class="" href="welcome.php">Cancel</a>
             </div>
         </form>
-    </div>    
+    </div>  
+</section> 
+
+
+<section>
+        <div class="footer">
+            <h1>Saaf</h1>
+            <div class="logo">
+                <img src="/PORTFOLIO/Assets/twitter.png" alt="">
+                <img src="/PORTFOLIO/Assets/facebook-2.png" alt="">
+                <img src="/PORTFOLIO/Assets/youtube.png" alt="">
+                <img src="/PORTFOLIO/Assets/linkedin.png" alt="">
+            </div>
+            <h2>@ 2020 copyright all right reserved</h2>
+        </div>
+    </section>  
+
+    
+
 </body>
 </html>

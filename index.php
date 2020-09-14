@@ -17,6 +17,8 @@
     <title>acceail</title>
 </head>
 <body>
+
+
     <nav>
         <div class="logo">
             <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
@@ -38,6 +40,9 @@
             <div class="burger__line3"></div>
         </div>
     </nav>
+
+
+
     <section class="sectionTeam">
         
         <img class="  sectionTeam-photo" src="Assets/coffee-2737047_1920.png">

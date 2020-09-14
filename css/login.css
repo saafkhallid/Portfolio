@@ -343,7 +343,7 @@ ul li .active {
 
 .container-register {
   margin: auto;
-  height: 85vh;
+  height: 99vh;
   width: 500px;
   max-width: 90%;
   padding-bottom: 100px;
@@ -491,9 +491,12 @@ ul li .active {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   body {
     width: 100%;
+  }
+  body .container-register {
+    height: 60vh;
   }
   body .saaf {
     height: 60vh;
@@ -507,8 +510,11 @@ ul li .active {
   body {
     width: 100%;
   }
-  body .saaf {
-    height: 60vh;
+  body .saaf .container-register {
+    width: 90%;
+  }
+  body .saaf .container {
+    height: 70vh;
   }
   body .saaf .container .container-forum {
     width: 90%;

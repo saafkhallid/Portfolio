@@ -48,17 +48,19 @@ body {
 .saaf{
     height: 80vh;
     margin: 0 auto;
+    
 
 }
 
 
 .container-register  {
     margin:auto;
-    height: 85vh;
+    height: 99vh;
     width:500px;
     max-width:90%;
     // margin-bottom: 30px;
     padding-bottom: 100px;
+    // padding-top: 10%;
 
     h2 {
         text-align: center;
@@ -220,9 +222,13 @@ body {
       
 
       
-    @media only screen and (max-width:768px) {
+    @media only screen and (max-width:800px) {
         body {
          width: 100%;
+         .container-register{
+             height: 60vh;
+            //  background-color: blue;
+         }
          .saaf{
             height:60vh;
             .container{
@@ -239,8 +245,12 @@ body {
         body {
          width: 100%;
          .saaf{
-            height:60vh;
+            // height:70vh;
+            .container-register{
+                width: 90%;
+            }
             .container{
+                height:70vh;
 
                 .container-forum{
                     width: 90%;
