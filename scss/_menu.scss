@@ -5,6 +5,16 @@ nav {
     min-height: 8vh;
     margin-top: 2%;
 }
+// .navMenu--login{
+//     // padding: 5px 10px;
+//     width: 100px;
+//     color: coral;
+//     height: 30px;
+//     border-radius: 3px;
+//     background-color: rgb(223, 211, 45);
+//     // border: 1px   black;
+//     text-align: center;
+// }
 .logo {
     text-decoration: none;
     a {
@@ -17,6 +27,17 @@ nav {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+    .navMenu--login{
+        // padding: 5px 10px;
+        width: 100px;
+        color:#ffff;
+
+        height: 30px;
+        border-radius: 3px;
+        background-color: rgb(223, 211, 45);
+        // border: 1px   black;
+        text-align: center;
+    }
 
     & li {
         list-style: none;

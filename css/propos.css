@@ -35,6 +35,15 @@ nav {
   justify-content: space-evenly;
 }
 
+.navMenu .navMenu--login {
+  width: 100px;
+  color: #ffff;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #dfd32d;
+  text-align: center;
+}
+
 .navMenu li {
   list-style: none;
 }

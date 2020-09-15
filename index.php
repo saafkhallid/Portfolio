@@ -32,7 +32,7 @@
             </li>
 
             <li class="active"><a href="contact.php">Contact</a></li>
-            <li class="active"><a href="login.php">login</a></li>
+            <li class="active navMenu--login "><a href="login.php">login</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
