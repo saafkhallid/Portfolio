@@ -21,7 +21,7 @@
 
 
 						$service_text = $_POST['service_text'];
-						$target = "../images/".basename($service_image);
+						$target = "images/".basename($service_image);
 						mysqli_query($db, "INSERT INTO services (service_image, service_titre,service_text) VALUES ('$service_image', '$service_titre','$service_text')"); 
 							$_SESSION['message'] = "Address saved"; 
 							header('location:indexpage.php');

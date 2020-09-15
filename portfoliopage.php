@@ -18,7 +18,7 @@ include 'portfolioaction.php';
      
 
      
-    <link rel="stylesheet" href="../css/Teampage.css">
+    <link rel="stylesheet" href="css/Teampage.css">
 </head>
 <body>
     
@@ -36,7 +36,7 @@ include 'portfolioaction.php';
 					<li><a href="portfoliopage.php">Portfolio</a></li>
 					<li><a href=" contactpage.php ">contact</a></li>
 					<li><a href=" indexpage.php">accuil</a></li>
-					<li><a href="loginpage.php">login</a></li>
+					<li class="" ><a href="loginpage.php ">login</a></li>
 				</ul>
 			</nav>
 		</div>

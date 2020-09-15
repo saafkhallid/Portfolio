@@ -1,5 +1,17 @@
 
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+	// header("location: login.php");
+		header("location: Adminstration.php");
 
+	
+    exit;
+}
+?>
 
 
 
@@ -9,13 +21,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration</title>
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+
  
 
      
 
      
-    <link rel="stylesheet" href="../css/Teampage.css">
+    <link rel="stylesheet" href="css/Teampage.css">
 </head>
 <body>
     
@@ -39,10 +52,17 @@
 		</div>
 
 		<div class="main-content">
-			<h1> Welcome page Administration</h1>
+			<h1> Welcome page login</h1>
 			
       <div class="">
-				
+				<div class="">
+				<div class="page-header">
+				<h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+			</div>
+			<p>
+				<a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+				<a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+			</p>
 				
 				</div>
 				

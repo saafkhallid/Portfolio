@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/propos.css">
+    <link rel="stylesheet" href="css/propos.css">
 
     <title>Apropos</title>
 </head>
@@ -33,14 +33,14 @@
 
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo" src="../Assets/flat-lay-of-black-frame-tablet-3774094(1).jpg">
+        <img class="  sectionTeam-photo" src="Assets/flat-lay-of-black-frame-tablet-3774094(1).jpg">
         <div><h1 class="title" id="text">  
              </h1></div>
     </section> 
     <section class="about">
         <div class=" about-block "><h1 class="  about-block__titre  ">About Me</h1></div>
         <div class="aboutmy">
-            <div class="information1"><img src="../Assets/adult-beard-boy-casual-220453.jpg"  alt="">
+            <div class="information1"><img src="Assets/adult-beard-boy-casual-220453.jpg"  alt="">
             
             </div>
            

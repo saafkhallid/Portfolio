@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "C:\wamp64\www\Portfolio\priver\dbConfig.php";
+require_once "dbConfig.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
@@ -99,7 +99,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Sign Up</title>
     
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="css/login.css">
 
    </head>
 <body>

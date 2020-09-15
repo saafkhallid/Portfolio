@@ -75,7 +75,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Reset Password</title>
-    <link rel="stylesheet" href="../css/login.css?v=<?php.echo.time();.?> ">
+    <link rel="stylesheet" href="css/login.css?v=<?php.echo.time();.?> ">
 
     
 </head>
