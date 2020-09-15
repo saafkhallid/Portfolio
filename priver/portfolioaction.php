@@ -24,7 +24,7 @@
 									$portfolio_path = $_POST['path'];
 			
 			
-									$target = "images/".basename($portfolio_image);
+									$target = "../images/".basename($portfolio_image);
 									$res=mysqli_query($dbn, "INSERT INTO `images` (`image`,`path`) VALUES ('".$portfolio_image."', '".$portfolio_path."')"); 
 									if($res==true){
 										echo "donnen upload";

@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact.css?v=<?php.echo.time();.?> ">
+    <link rel="stylesheet" href="../css/contact.css?v=<?php.echo.time();.?> ">
 
     <title>contact</title>
 </head>
@@ -40,7 +40,7 @@
 
     <section class="sectionlogin">
         
-        <img class="  sectionlogin-photo" src="Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
+        <img class="  sectionlogin-photo" src="../Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
        
     
     

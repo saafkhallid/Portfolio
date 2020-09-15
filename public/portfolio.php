@@ -1,6 +1,6 @@
 
 <?php
-include 'portfolioaction.php';
+include "C:\wamp64\www\Portfolio\priver\portfolioaction.php";
 
 ?>
 
@@ -10,7 +10,7 @@ include 'portfolioaction.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
 
     <title>portfolio</title>
 </head>
@@ -21,7 +21,7 @@ include 'portfolioaction.php';
         </div>
         </div>
         <ul class="navMenu">
-            <li><a class="active" href="index.php">Acceuil</a></li>
+            <li><a class="active" href="../index.php">Acceuil</a></li>
             <li><a href="Apropo.php">À propos </a></li>
             <li class="active" id="act"><a href="portfolio.php">portfolio</a>
                 
@@ -39,7 +39,7 @@ include 'portfolioaction.php';
 
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo" src="Assets/coffee-2737047_1920.png">
+        <img class="  sectionTeam-photo" src="../Assets/coffee-2737047_1920.png">
         <div><h1 class="title" id="text">  <br>
             </h1></div>
     </section>
@@ -56,7 +56,7 @@ include 'portfolioaction.php';
 
         <?php while ($row = mysqli_fetch_array($results)) { ?>  
              <div class="block"> 
-                 <a href="<?php echo $row['path'];?>" target="_blank" ><img src="images/<?= $row['image'];?>" > </a>
+                 <a href="<?php echo $row['path'];?>" target="_blank" ><img src="../images/<?= $row['image'];?>" > </a>
                  
                 </div>
                 <?php } ?>

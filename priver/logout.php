@@ -9,7 +9,7 @@ $_SESSION = array();
 session_destroy();
  
 // Redirect to login page
-header("location: login.php");
+header("location:C:\wamp64\www\Portfolio\public\login.php");
 exit;
 ?>
 

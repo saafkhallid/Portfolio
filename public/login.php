@@ -12,12 +12,12 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: loginpage.php");
+    header("location:\Portfolio\priver\loginpage.php");
     exit;
 }
  
 // Include config file
-require_once "dbConfig.php";
+require_once "C:\wamp64\www\Portfolio\priver\dbConfig.php";
  
 // Define variables and initialize with empty values
 $username = $password = "";
@@ -72,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            header("location:loginpage.php");
+                            header("C:\wamp64\www\Portfolio\priver\loginpage.php");
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
@@ -105,7 +105,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css?v=<?php.echo.time();.?> ">
+    <link rel="stylesheet" href="../css/login.css?v=<?php.echo.time();.?> ">
    
    
 </head>
@@ -117,7 +117,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
         </div>
         <ul class="navMenu">
-            <li><a  href="index.php">Acceuil</a></li>
+            <li><a  href="../index.php">Acceuil</a></li>
             <li><a href="Apropo.php">À propos </a></li>
             <li class="active" id="act"><a href="Apropo.php">portfolio</a>
                 

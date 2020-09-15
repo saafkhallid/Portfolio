@@ -15,7 +15,7 @@
      
 
      
-    <link rel="stylesheet" href="css/Teampage.css">
+    <link rel="stylesheet" href="../css/Teampage.css">
 </head>
 <body>
     
