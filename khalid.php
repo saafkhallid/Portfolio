@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "dbConfig.php";
+require_once "config.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
@@ -98,84 +98,38 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    
-    <link rel="stylesheet" href="css/login.css">
-
-   </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; }
+    </style>
+</head>
 <body>
-<nav>
-        <div class="logo">
-            <a href="index.php"  target="_self" ><h1>Saaf</h1> </a>
-        </div>
-        </div>
-        <ul class="navMenu">
-            <li><a  href="index.php">Acceuil</a></li>
-            <li><a href="Apropo.php">À propos </a></li>
-            <li class="active" id="act"><a href="Apropo.php">portfolio</a>
-                
-            </li>
-
-            <li class="active"><a href="contact.php">Contact</a></li>
-            <li class="active"><a href="login.php">login</a></li>
-        </ul>
-        <div class="burger">
-            <div class="burger__line1"></div>
-            <div class="burger__line2"></div>
-            <div class="burger__line3"></div>
-        </div>
-</nav>
-    <section class="sectionlogin">
-        
-        <img class="  sectionlogin-photo" src="/PORTFOLIO/Assets/person-in-front-of-laptop-on-brown-wooden-table-2115217.png">
-       
-    
-    
-    </section>
-
-    <div class="container-register">
+    <div class="wrapper">
         <h2>Sign Up</h2>
-        <form class="container-register__form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <p class=" container-register__form-info" >Please fill this form to create an account.</p>
-
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?> ">
-                <label class="form-group__user">Username:</label>
+        <p>Please fill this form to create an account.</p>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label>Username</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label class="form-group__user">Password:</label>
+                <label>Password</label>
                 <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                <label class="form-group__user">Confirm Password:</label>
+                <label>Confirm Password</label>
                 <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
-            <div class="form-group button-registre">
-                <input type="submit" class="btn1 btn-primary" value="Submit">
-                <input type="reset" class="btn1 btn-default" value="Reset">
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-default" value="Reset">
             </div>
-            <p class="forg">Already have an account? <a href="login.php" class="forgot-ligne" >Login here</a>.</p>
+            <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
-    </div> 
-
-    <section>
-        <div class="footer">
-            <h1>Saaf</h1>
-            <div class="logo">
-                <img src="/PORTFOLIO/Assets/twitter.png" alt="">
-                <img src="/PORTFOLIO/Assets/facebook-2.png" alt="">
-                <img src="/PORTFOLIO/Assets/youtube.png" alt="">
-                <img src="/PORTFOLIO/Assets/linkedin.png" alt="">
-            </div>
-            <h2>@ 2020 copyright all right reserved</h2>
-        </div>
-    </section>
-    
-    
-
-
-
+    </div>    
 </body>
 </html>
