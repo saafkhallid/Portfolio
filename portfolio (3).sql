@@ -4,7 +4,7 @@
 --
 -- Host: 127.0.0.1:3306
 -- Generation Time: Sep 14, 2020 at 04:30 PM
--- Server version: 5.7.31
+-- Server version: 5.7.31                 
 -- PHP Version: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
